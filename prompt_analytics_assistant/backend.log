@@ -1,0 +1,44 @@
+INFO:     Started server process [8908]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53996 - "WebSocket /api/ws/typing" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53984 - "WebSocket /api/ws/overlay" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:34206 - "WebSocket /api/ws/typing" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49200 - "WebSocket /api/ws/typing" [accepted]
+INFO:     connection open
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+Terminal monitor typing socket connected.
+Desktop overlay socket connected. Total overlays: 1
+Terminal monitor typing socket connected.
+Terminal monitor typing socket disconnected.
+Terminal monitor typing socket connected.
+INFO:     127.0.0.1:33214 - "OPTIONS /api/browser_submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33220 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+INFO:     127.0.0.1:50454 - "OPTIONS /api/browser_submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50466 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+INFO:     127.0.0.1:35314 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+INFO:     127.0.0.1:43822 - "OPTIONS /api/browser_submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43838 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+INFO:     127.0.0.1:38378 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+INFO:     127.0.0.1:33712 - "POST /api/browser_submit HTTP/1.1" 200 OK
+Continuous learning trigger: Retraining models...
+SentenceTransformers/FAISS not available. Using TF-IDF fallback for similarity search.
+Terminal monitor typing socket disconnected.
+INFO:     127.0.0.1:59456 - "OPTIONS /api/browser_submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59462 - "POST /api/browser_submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52302 - "WebSocket /api/ws/typing" [accepted]
+INFO:     connection open

@@ -1,0 +1,280 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+\usecolortheme{orchid}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+
+\definecolor{primary}{RGB}{78,130,238}
+\definecolor{good}{RGB}{16,185,129}
+\definecolor{warn}{RGB}{245,158,11}
+\definecolor{bad}{RGB}{239,68,68}
+\setbeamercolor{palette primary}{bg=primary}
+\setbeamercolor{palette secondary}{bg=primary!80}
+\setbeamercolor{palette tertiary}{bg=primary!60}
+\setbeamercolor{frametitle}{bg=primary, fg=white}
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{structure}{fg=primary}
+
+\title[Prompt Analytics Assistant]{\textbf{Prompt Analytics Assistant}}
+\subtitle{Project Progress Update}
+\author{Team 6}
+\date{August 2026}
+
+\begin{document}
+
+% ── Title Slide ───────────────────────────────────────────────────────────────
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ── Agenda ────────────────────────────────────────────────────────────────────
+\begin{frame}{Agenda}
+  \tableofcontents
+\end{frame}
+
+% ── Section 1 ─────────────────────────────────────────────────────────────────
+\section{Project Overview}
+\begin{frame}{Project Overview}
+  \begin{block}{Objective}
+    Build a \textbf{real-time Prompt Analytics Assistant} that monitors AI prompts,
+    predicts token usage, estimates cost, and classifies prompt quality — live, as the user types.
+  \end{block}
+  \vspace{0.4em}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \textbf{Target Platforms}
+    \begin{itemize}
+      \item Google Gemini
+      \item ChatGPT
+      \item Claude AI
+      \item Antigravity CLI
+    \end{itemize}
+    \column{0.5\textwidth}
+    \textbf{Core Value}
+    \begin{itemize}
+      \item Reduce wasted tokens
+      \item Improve prompt quality
+      \item Track API cost in real time
+      \item Learn from usage history
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Section 2 ─────────────────────────────────────────────────────────────────
+\section{System Architecture}
+\begin{frame}{System Architecture}
+  \begin{center}
+  \begin{tikzpicture}[node distance=1.4cm, every node/.style={font=\small}]
+    \tikzstyle{box}=[rectangle, rounded corners, draw=primary, fill=primary!10, minimum width=2.4cm, minimum height=0.7cm, align=center]
+    \tikzstyle{arr}=[->, thick, color=primary]
+
+    \node[box] (ext)   {Browser\\Extension};
+    \node[box] (api)   [right=1.6cm of ext] {FastAPI\\Backend};
+    \node[box] (ml)    [right=1.6cm of api] {ML\\Engine};
+    \node[box] (db)    [below=1.0cm of api] {SQLite\\Database};
+    \node[box] (over)  [above=1.0cm of api] {Overlay\\UI};
+
+    \draw[arr] (ext)  -- node[above,font=\tiny]{WebSocket} (api);
+    \draw[arr] (api)  -- node[above,font=\tiny]{analyze} (ml);
+    \draw[arr] (api)  -- node[right,font=\tiny]{read/write} (db);
+    \draw[arr] (ml)   -- node[right,font=\tiny]{retrain} (db);
+    \draw[arr] (api)  -- node[right,font=\tiny]{push} (over);
+  \end{tikzpicture}
+  \end{center}
+  \vspace{0.3em}
+  \small
+  \textbf{File watcher} on \texttt{prompt.md} enables IDE/GUI usage without the browser extension.
+\end{frame}
+
+% ── Section 3 ─────────────────────────────────────────────────────────────────
+\section{Components Completed}
+\begin{frame}{Components Completed}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \textbf{\textcolor{good}{\faCheckCircle\ Done}}
+    \begin{itemize}
+      \item[\textcolor{good}{\checkmark}] FastAPI backend with WebSocket streaming
+      \item[\textcolor{good}{\checkmark}] Token counter (\texttt{tiktoken} cl100k\_base)
+      \item[\textcolor{good}{\checkmark}] TF-IDF quality classifier (LR + RF)
+      \item[\textcolor{good}{\checkmark}] Ridge regression for output token prediction
+      \item[\textcolor{good}{\checkmark}] FAISS semantic similarity search
+      \item[\textcolor{good}{\checkmark}] SQLite history DB with seed data
+      \item[\textcolor{good}{\checkmark}] Browser extension (MV3) for Gemini/GPT/Claude
+      \item[\textcolor{good}{\checkmark}] Prompt History Dashboard (SPA)
+      \item[\textcolor{good}{\checkmark}] Gemini API live quality evaluation
+      \item[\textcolor{good}{\checkmark}] Continuous learning (auto-retrain on feedback)
+    \end{itemize}
+    \column{0.5\textwidth}
+    \textbf{\textcolor{warn}{\faTools\ In Progress / Planned}}
+    \begin{itemize}
+      \item[\textcolor{warn}{$\circ$}] Antigravity CLI hook integration
+      \item[\textcolor{warn}{$\circ$}] Desktop overlay (Tauri/Electron)
+      \item[\textcolor{warn}{$\circ$}] Cross-platform packaging
+      \item[\textcolor{warn}{$\circ$}] Extended model pricing (GPT-4, Claude)
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ── Section 4 ─────────────────────────────────────────────────────────────────
+\section{ML Pipeline}
+\begin{frame}{ML Pipeline}
+  \begin{block}{Training Data}
+    \textbf{Team\_6\_Gemini\_dataset.csv} — $\sim$520K rows \quad|\quad
+    \textbf{evaluation.csv} — $\sim$170K rows (labelled: Good / Average / Bad)
+  \end{block}
+  \vspace{0.4em}
+  \begin{columns}
+    \column{0.33\textwidth}
+    \centering
+    \textbf{Quality Classifier}\\[4pt]
+    TF-IDF (500 features)\\
+    + structural features\\
+    (length, word count,\\
+    code blocks, lists)\\[4pt]
+    Logistic Regression\\
+    \textit{or} Random Forest\\
+    (best CV score wins)
+    \column{0.33\textwidth}
+    \centering
+    \textbf{Token Regressor}\\[4pt]
+    Ridge Regression\\
+    on TF-IDF + model type\\
+    + input token count\\[4pt]
+    Falls back to\\
+    $2.5\times$ input tokens\\
+    if DB is sparse
+    \column{0.33\textwidth}
+    \centering
+    \textbf{Similarity Search}\\[4pt]
+    SentenceTransformers\\
+    \texttt{all-MiniLM-L6-v2}\\
+    + FAISS IndexFlatIP\\[4pt]
+    TF-IDF cosine\\
+    similarity fallback\\
+    (top-3 results)
+  \end{columns}
+\end{frame}
+
+% ── Section 5 ─────────────────────────────────────────────────────────────────
+\section{API Endpoints}
+\begin{frame}{API Endpoints}
+  \begin{table}
+    \centering
+    \small
+    \begin{tabular}{lll}
+      \toprule
+      \textbf{Method} & \textbf{Endpoint} & \textbf{Purpose} \\
+      \midrule
+      WS  & \texttt{/api/ws/typing}      & Real-time prompt stream from extension \\
+      WS  & \texttt{/api/ws/overlay}     & Push analysis to overlay UI \\
+      POST & \texttt{/api/hook\_submit}  & CLI hook after LLM run completes \\
+      POST & \texttt{/api/browser\_submit} & Log completed browser run \\
+      POST & \texttt{/api/feedback}      & Submit quality feedback \\
+      POST & \texttt{/api/retrain}       & Trigger manual model retrain \\
+      GET  & \texttt{/api/history}       & Fetch all prompt history \\
+      GET  & \texttt{/}                  & Interactive HTML dashboard \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+% ── Section 6 ─────────────────────────────────────────────────────────────────
+\section{Cost Estimation}
+\begin{frame}{Cost Estimation — Supported Models}
+  \begin{table}
+    \centering
+    \small
+    \begin{tabular}{lrr}
+      \toprule
+      \textbf{Model} & \textbf{Input (\$/1M tokens)} & \textbf{Output (\$/1M tokens)} \\
+      \midrule
+      gemini-1.5-flash  & \$0.075  & \$0.30 \\
+      gemini-3.6-flash  & \$0.075  & \$0.30 \\
+      gemini-1.0-pro    & \$0.50   & \$1.50 \\
+      gemini-1.5-pro    & \$1.25   & \$5.00 \\
+      gemini-3.6-thinking & \$1.25 & \$5.00 \\
+      gemini-3.1-pro    & \$1.25   & \$5.00 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  \vspace{0.3em}
+  \small
+  Cost is computed as: \quad
+  $\text{Cost} = (\text{input\_tokens} \times p_{\text{in}}) + (\text{predicted\_output\_tokens} \times p_{\text{out}})$
+\end{frame}
+
+% ── Section 7 ─────────────────────────────────────────────────────────────────
+\section{Tech Stack}
+\begin{frame}{Tech Stack}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{tabular}{ll}
+      \textbf{Layer} & \textbf{Technology} \\
+      \midrule
+      Backend API    & FastAPI + Uvicorn \\
+      ML / NLP       & scikit-learn, numpy \\
+      Embeddings     & SentenceTransformers \\
+      Vector Search  & FAISS \\
+      Tokenization   & tiktoken \\
+      Database       & SQLite \\
+      LLM Eval       & Gemini API \\
+    \end{tabular}
+    \column{0.5\textwidth}
+    \begin{tabular}{ll}
+      \textbf{Layer} & \textbf{Technology} \\
+      \midrule
+      Browser Ext.   & Chrome MV3 (JS) \\
+      Overlay UI     & HTML/CSS/JS \\
+      Dashboard      & Vanilla JS SPA \\
+      Dataset Gen.   & Google GenAI SDK \\
+      Environment    & Python 3.12 venv \\
+      Platform       & Linux \\
+    \end{tabular}
+  \end{columns}
+\end{frame}
+
+% ── Section 8 ─────────────────────────────────────────────────────────────────
+\section{Key Challenges \& Solutions}
+\begin{frame}{Key Challenges \& Solutions}
+  \begin{table}
+    \small
+    \begin{tabular}{p{4.5cm} p{6.5cm}}
+      \toprule
+      \textbf{Challenge} & \textbf{Solution} \\
+      \midrule
+      Cold-start (empty DB) & Seed DB from 520K-row CSV on first run \\
+      Single-class training edge case & Skip classifier training; use majority class fallback \\
+      Gemini API latency in real-time & 4s timeout + offline ML fallback \\
+      Token counting for Gemini & \texttt{tiktoken} cl100k\_base (close approximation) \\
+      Stale model after new feedback & Background retrain task after every feedback/run \\
+      Schema migration (cost columns) & \texttt{PRAGMA table\_info} + \texttt{ALTER TABLE} on startup \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+% ── Section 9 ─────────────────────────────────────────────────────────────────
+\section{Next Steps}
+\begin{frame}{Next Steps}
+  \begin{enumerate}
+    \item \textbf{Antigravity CLI Integration} — Wire \texttt{bin/hook.py} PostInvocation hook to \texttt{/api/hook\_submit}
+    \item \textbf{Desktop Overlay} — Package \texttt{overlay/app.py} as a native window (Tauri or Electron)
+    \item \textbf{Extended Model Support} — Add GPT-4o and Claude pricing tiers
+    \item \textbf{Evaluation \& Benchmarking} — Measure classifier accuracy on held-out test split; report F1 per class
+    \item \textbf{Cross-platform Packaging} — \texttt{run.sh} / \texttt{run\_background.sh} tested on macOS \& Windows
+    \item \textbf{Unit Test Coverage} — Expand \texttt{tests/test\_backend.py} to cover ML and DB layers
+  \end{enumerate}
+\end{frame}
+
+% ── Thank You ─────────────────────────────────────────────────────────────────
+\begin{frame}
+  \begin{center}
+    {\Huge \textbf{Thank You}}\\[1em]
+    {\large Prompt Analytics Assistant — Team 6}\\[0.5em]
+    \textcolor{primary}{\rule{6cm}{0.4pt}}\\[0.5em]
+    \small Questions \& Discussion
+  \end{center}
+\end{frame}
+
+\end{document}

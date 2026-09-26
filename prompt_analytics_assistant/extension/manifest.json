@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Analytics Assistant",
+  "version": "2.0",
+  "description": "Real-time prompt quality analysis for Gemini, ChatGPT, and Claude.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Prompt Analytics"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

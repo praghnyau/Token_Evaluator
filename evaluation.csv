@@ -1,0 +1,1441 @@
+prompt_id,prompt,model,output,label,correctness,completeness,clarity,hallucination,input_tokens,output_tokens,total_tokens,cost,reason
+1,Explain Artificial Intelligence with real-world examples.,Gemini Flash 3.6,"At its core, Artificial Intelligence (AI) is the capability of a computer system to perform tasks that typically require human intelligence—such as reasoning, visual perception, decision-making, and language understanding.
+
+Instead of following explicit step-by-step instructions for every single scenario, modern AI systems learn from vast amounts of data to recognize patterns and make predictions or decisions on their own.Key Real-World Examples
+AI is already woven into everyday technology, across five main categories:
+
+1. Everyday Consumer Apps
+Personalized Recommendations (Netflix, Spotify, YouTube): Recommendation engines analyze past watch history, listening habits, and thousands of similar users to predict what content will keep you engaged next.
+
+Smart Assistants (Siri, Google Assistant, Alexa): These rely on Natural Language Processing (NLP) to turn spoken audio into digital commands, understand intent, and answer questions.
+
+Spam & Security Filters: Email platforms continuously adapt to new spam tactics, analyzing message structure, sender reputation, and word phrasing to filter out unwanted mail.
+
+2. Healthcare & Medicine
+Medical Imaging & Diagnostics: Computer vision algorithms analyze X-rays, MRIs, and CT scans to highlight early signs of tumors, fractures, or diseases faster and often with equal or higher accuracy than human specialists.
+
+Drug Discovery: AI models simulate biological interactions at a molecular level, reducing the time needed to identify potential drug compounds from years to months.
+
+3. Transportation & Mobility
+Autonomous & Driverless Vehicles (Tesla, Waymo): Vehicles process feeds from cameras, radar, and lidar in real time to recognize pedestrians, traffic signals, lanes, and other cars to navigate complex roads.
+
+Navigation & Traffic Routing (Google Maps, Waze): Routing algorithms analyze anonymized location data from millions of smartphones to calculate live traffic jams, optimal re-routing, and arrival times.
+
+4. Finance & E-Commerce
+Fraud Detection: Banks monitor transactions using Machine Learning models. If a credit card is suddenly used across two distant locations within an hour, the system automatically flags or blocks the transaction.
+
+Algorithmic Trading: Financial firms deploy automated systems to analyze market trends, news feeds, and trading signals to execute high-speed transactions in milliseconds.
+
+5. Generative AI & Automation
+Large Language Models (ChatGPT, Gemini): Trained on vast troves of text, generative models understand complex instructions, summarize lengthy documents, write code, and draft emails.
+
+Image & Media Generation (Midjourney, DALL-E): Generative vision models translate natural text prompts into original images, artwork, and visual designs.",Good,5,5,4,5,14,620,634,0.000186,Minor formatting glitch between sentences (missing space/newline before 'Key Real-World Examples'); no hallucinations detected; factually accurate and well-structured
+2,AI,Gemini Flash 3.6,"Artificial Intelligence (AI) refers to computer systems engineered to perform tasks that historically required human cognition—such as learning, reasoning, problem-solving, and perceiving sensory input.Current Landscape at a GlanceAgentic & Autonomous Systems: AI is moving beyond standard text generation toward self-directed software agents capable of executing multi-step workflows, tool calls, and complex task planning.  Multimodal Intelligence: Modern models natively process text, images, audio, video, and code in real time, making interactions more fluid across platforms.On-Device & Edge AI: Efficient, compressed models run directly on personal hardware (phones, laptops, IoT devices) to improve processing speed and keep sensitive data local.Governance & Safety: Industry priorities increasingly focus on verification, security controls, energy efficiency, and regulatory compliance.",Bad,5,3,3,5,1,223,224,0.000067,Prompt is vague (just 'AI'); response is factually correct and current but lacks depth and real-world examples; repeated formatting issue with missing spaces between sections
+3,Explain the difference between AI Machine Learning and Deep Learning in a table.,Gemini Flash 3.6,"| Feature / Aspect | Artificial Intelligence (AI) | Machine Learning (ML) | Deep Learning (DL) || :--- | :--- | :--- | :--- || Definition | The overarching concept of creating smart machines capable of mimicking human intelligence. | A subset of AI where machines learn patterns from data without being explicitly programmed. | A specialized subset of ML using multi-layered artificial neural networks inspired by the human brain. || How It Works | Uses rules, logic, decision trees, or algorithms to make decisions and solve problems. | Analyzes features from data, builds statistical models, and updates predictions as new data arrives. | Processes vast unstructured data through deep neural networks (many hidden layers) to automatically discover complex features. || Human Intervention | High: Engineers hardcode explicit rules, logic pathways, and decision trees. | Moderate: Humans must extract and engineer features. | Minimal: Extracts features automatically from raw inputs. || Data Requirements | Can operate on zero data using simple programmed logic or decision trees. | Performs well on small-to-medium structured datasets. | Requires massive volumes of data to achieve high accuracy. || Hardware Required | Runs easily on standard CPU hardware. | Runs efficiently on standard CPUs or modest GPUs. | Requires high-performance hardware (GPUs / TPUs) for parallel processing. || Primary Real-World Examples | Chess engines, basic chatbot scripts, home thermostats. | Credit card fraud detection, spam filters, price forecasting, recommendation engines. | Facial recognition, autonomous driving, LLMs (ChatGPT, Gemini), real-time language translation. |",Good,5,5,5,5,20,680,517,0.000206,Excellent prompt — specific and structured; response is accurate, well-organized, covers all key distinctions with no hallucinations
+4,Tell me about computers.,Gemini Flash 3.6,"# What is a Computer?
+
+A **computer** is an electronic device designed to process data, perform calculations, and execute operations based on instructions provided by software or hardware. At its core, a computer accepts raw data as **input**, processes it, produces **output**, and saves the results in **storage**.
+
+---
+
+## 1. The Core Architecture (Hardware)
+
+Every computer system consists of physical hardware components working in tandem:
+
+* **CPU (Central Processing Unit):** The ""brain"" of the computer that performs calculations, executes code, and controls other hardware components.
+* **RAM (Random Access Memory):** Volatile short-term memory used to hold active programs and temporary data currently in use by the CPU.
+* **Storage (SSD / Hard Drive):** Non-volatile long-term memory where operating systems, installed applications, and user files are permanently stored.
+* **Motherboard:** The main printed circuit board that connects the CPU, memory, storage, and peripheral devices together.
+* **GPU (Graphics Processing Unit):** A specialized processor designed to handle parallel computing tasks, 3D graphics rendering, and AI operations.
+
+---
+
+## 2. Software Layer
+
+Hardware cannot function without software to instruct it:
+
+1. **Operating System (OS):** Core system software (e.g., Windows, macOS, Linux, iOS, Android) that acts as an interface between the hardware and the user.
+2. **Applications:** Programs created for specific user tasks (e.g., web browsers, word processors, games, development environments).
+
+---
+
+## 3. Categories of Computers
+
+| Type | Description & Uses |
+| :--- | :--- |
+| **Personal Computers (PCs)** | Laptops and desktops designed for individual daily productivity, entertainment, and gaming. |
+| **Mobile Devices** | Smartphones and tablets optimized for portability, touch interaction, and wireless communications. |
+| **Servers** | High-performance machines designed to deliver web pages, databases, and enterprise applications across networks. |
+| **Supercomputers** | Ultra-high-speed clusters used for massive scientific computations, weather forecasting, and complex simulations. |
+| **Embedded Systems** | Microcontrollers built into non-computing products such as cars, medical devices, smart TVs, and home appliances. |
+
+---
+
+## 4. How Computers Process Information
+
+Computers operate on the **binary system**, using base-2 digits (`0` and `1`):
+
+* **Bit:** The smallest unit of data (a single `0` or `1`, representing an electrical state of OFF or ON).
+* **Byte:** A group of 8 bits, capable of representing a single character, letter, or symbol.
+* **Processing Cycle:** Fetch Instruction → Decode → Execute → Store Result",Average,5,4,4,5,6,380,645,0.000114,Prompt is vague ('Tell me about computers'); response is accurate and well-structured but overly broad due to the vague prompt; no hallucinations; clarity slightly reduced by lack of focus
+5,Write a Python program to reverse a string without using built-in functions.,Gemini Flash 3.6,"# Reversing a String in Python Without Built-in Functions
+
+Below are three different approaches to reversing a string without using built-in methods like `reversed()` or slice step shortcuts like `[::-1]`.
+
+---
+
+## Approach 1: Using a For Loop (Iterative String Concatenation)
+
+This is the most straightforward method. Iterate through the string from start to finish and prepending each character to a new string variable.
+
+```python
+def reverse_string_loop(s: str) -> str:
+    reversed_str = """"
+    for char in s:
+        reversed_str = char + reversed_str  # Prepend character
+    return reversed_str
+
+# Test
+input_str = ""Hello World""
+print(reverse_string_loop(input_str))  # Output: dlroW olleH
+
+Approach 2: Using Two Pointers and a List
+In Python, strings are immutable, so modifying characters in-place isn't directly possible. We can convert the string into a list of characters, swap elements from both ends moving inward, and construct the result manually.
+def reverse_string_two_pointers(s: str) -> str:
+    char_list = list(s)
+    left, right = 0, len(char_list) - 1
+
+    # Swap characters moving from outside in
+    while left < right:
+        char_list[left], char_list[right] = char_list[right], char_list[left]
+        left += 1
+        right -= 1
+
+    # Reconstruct string manually without .join()
+    reversed_str = """"
+    for char in char_list:
+        reversed_str += char
+
+    return reversed_str
+
+# Test
+input_str = ""Artificial Intelligence""
+print(reverse_string_two_pointers(input_str))  # Output: ecnegilletnI laicifitrA
+
+Approach 3: Using Recursion
+This approach recursively breaks down the string by taking the last character and appending the result of reversing the rest of the string.
+
+def reverse_string_recursive(s: str) -> str:
+    # Base case: empty string or single character
+    if len(s) <= 1:
+        return s
+
+    # Recursive step: last character + reverse of remaining string
+    return s[-1] + reverse_string_recursive(s[:-1])
+
+# Test
+input_str = ""Python""
+print(reverse_string_recursive(input_str))  # Output: nohtyP",Average,5,5,4,5,19,340,533,0.000103,"Prompt is functional but vague — no mention of edge cases, input constraints, or expected format; response is accurate and covers three valid approaches (loop, two-pointer, recursion) with clear explanations and test cases; minor ambiguity around what counts as a built-in function (e.g., list(), len() are used); no hallucinations"
+6,Python reverse,Gemini Flash 3.6,"# Reversing Sequences in Python
+
+Python provides several fast, built-in ways to reverse strings, lists, tuples, and other sequences.
+
+---
+
+## 1. Reversing a String
+
+Strings are immutable in Python, so reversing a string always produces a **new string**.
+
+### Method A: Extended Slicing `[::-1]` (Fastest & Most Pythonic)
+```python
+text = ""Python""
+reversed_text = text[::-1]
+
+print(reversed_text)  # Output: nohtyP
+
+2. Reversing a List
+Lists can be reversed in-place (modifying the original list) or by creating a new list.
+
+Method A: list.reverse() (In-Place Modification)
+Modifies the original list directly without allocating new memory. Returns None
+numbers = [1, 2, 3, 4, 5]
+numbers.reverse()
+
+print(numbers)  # Output: [5, 4, 3, 2, 1]
+
+Method B: Slicing [::-1] (Creates a New List)
+numbers = [1, 2, 3, 4, 5]
+reversed_numbers = numbers[::-1]
+
+print(reversed_numbers)  # Output: [5, 4, 3, 2, 1]
+print(numbers)           # Output: [1, 2, 3, 4, 5] (original unchanged)
+
+Method C: reversed() Iterator (Memory Efficient for Large Lists)
+Returns an iterator rather than a full copy in memory.
+numbers = [1, 2, 3, 4, 5]
+
+# Convert to list if needed:
+reversed_list = list(reversed(numbers))
+print(reversed_list)  # Output: [5, 4, 3, 2, 1]
+
+# Or iterate directly without creating a list copy:
+for num in reversed(numbers):
+    print(num, end="" "")  # Output: 5 4 3 2 1 
+
+3. Reversing Words in a Sentence
+To reverse the order of words rather than individual characters:
+
+sentence = ""Hello world from Python""
+reversed_sentence = "" "".join(sentence.split()[::-1])
+
+print(reversed_sentence)  # Output: Python from world Hello",Bad,5,4,4,5,3,420,423,0.000126,Prompt is extremely vague ('Python reverse') with no context on what to reverse or how; response is technically accurate and covers multiple approaches but lacks focus due to the ambiguous prompt; no hallucinations detected
+7,What is the capital of Australia,Gemini Flash 3.6,The capital of Australia is Canberra.,Good,5,5,5,5,8,4,12,0.0000018,Simple factual question with a clear and correct answer; no hallucinations; response is concise and accurate
+8,Explain photosynthesis in simple words.,Gemini Flash 3.6,"Photosynthesis is the process plants use to make their own food using sunlight. Think of a plant leaf as a tiny solar-powered kitchen.What Plants Take In Sunlight: Energy absorbed from the sun using green pigments called chlorophyll. Water: Pulled up from the soil through the roots. Carbon Dioxide: Absorbed from the surrounding air through tiny pores in the leaves. What Plants Create Glucose (Sugar): The food energy the plant uses to grow and survive. Oxygen: Released into the air as a byproduct, which animals and humans breathe.",Good,5,5,5,5,7,147,154,0.000044625,Clear and well-structured explanation using an effective analogy; covers inputs and outputs of photosynthesis accurately; no hallucinations; appropriate simplicity for the prompt
+9,Write a Python program to reverse a string.,Gemini Flash 3.6,"Here are two common ways to reverse a string in Python: Method 1: Using Slicing (Recommended) def reverse_string(s): return s[::-1] # Example usage: original = ""hello"" reversed_text = reverse_string(original) print(reversed_text) # Output: olleh Method 2: Using reversed() and join() def reverse_string(s): return """".join(reversed(s)) # Example usage: original = ""Python"" reversed_text = reverse_string(original) print(reversed_text) # Output: nohtyP",Good,5,5,5,5,9,114,123,0.000034875,Clear and correct response with two valid approaches; slicing is correctly recommended as the most Pythonic method; no hallucinations; well-structured with examples
+10,Calculate the derivative of x^3+5x^2-2x.,Gemini Flash 3.6,"import sympy as sp x = sp.Symbol('x') f = x**3 + 5*x**2 - 2*x df = sp.diff(f, x) print(""f'(x) ="", df) # f'(x) = 3*x**2 + 10*x - 2 | To find the derivative of f(x) = x^3 + 5x^2 - 2x, apply the power rule: First term: d/dx[x^3] = 3x^2 | Second term: d/dx[5x^2] = 10x | Third term: d/dx[-2x] = -2 | Therefore f'(x) = 3x^2 + 10x - 2",Average,5,4,4,5,12,105,117,0.0000324,Mathematically correct and well-explained with step-by-step power rule application; however prompt did not request a Python solution — unsolicited sympy code adds noise; no hallucinations
+11,Why do we use object-oriented programming?,Gemini Flash 3.6,"Object-Oriented Programming (OOP) is a programming paradigm built around organizing software into objects—data structures containing both data (attributes) and code (methods)—rather than just functions and logic. Core Advantages: Modularity & Reusability, Maintainability, Real-World Modeling, Scalability. Four Pillars: Encapsulation (bundling data and methods; security), Abstraction (hiding complexity; reduced complexity), Inheritance (reusing parent classes; DRY principle), Polymorphism (shared method interfaces; flexibility).",Average,5,4,3,5,8,251,259,0.0000759,Technically accurate and well-structured with all four OOP pillars covered; however lacks beginner-friendly analogies or code examples despite the basic nature of the question; terms like paradigm and DRY principle are used without explanation making it less accessible to beginners
+12,Summarize the main causes of climate change.,Gemini Flash 3.6,"Climate change is primarily driven by human activities that release greenhouse gases (GHGs) into the atmosphere, trapping heat and raising global temperatures. Primary Causes: Burning Fossil Fuels (coal, oil, gas releasing CO2 and N2O); Deforestation & Land Use (reduces CO2 absorption, releases stored carbon); Agriculture & Livestock (methane from cattle, fertilizers, rice cultivation); Industrial Processes (cement, steel, chemicals releasing CO2 and fluorinated gases); Waste & Landfills (decomposing organic waste generates methane).",Good,5,5,5,5,8,172,180,0.0000522,Well-structured and accurate summary covering all major causes of climate change; appropriate level of detail for a summarization prompt; no hallucinations; clear and accessible language
+13,Write a short story about a student who discovers a hidden room in their college.,Gemini Flash 3.6,"Leo's thumb traced the worn spine of an uncataloged leather volume in the basement stacks of Saint Jude's Library. Pulling it forward triggered a sharp metallic click. The heavy oak bookshelf swung open three inches, releasing a gust of cool air scented with vanilla and dust. Stepping through the narrow gap, Leo found a forgotten Victorian reading room frozen in time. Brass desk lamps sat silently atop velvet-covered tables, and stained-glass transom windows caught the pale afternoon light from an underground grating above. A chalkboard on the far wall still bore a differential equation written in faint white chalk, dated October 14, 1898. In the center of the room, an brass skeleton key rested beside an open journal. Its final entry read: To whoever finds this—the quiet belongs to you now. For the rest of the semester, while the rest of the campus scrambled for seats in the crowded modern study centers, Leo spent his evenings under the warm glow of the hidden brass lamps, writing his thesis in the safest sanctuary on campus.",Average,4,5,3,5,16,188,204,0.0000576,Creative and well-written story that fulfills the prompt; strong sensory details and narrative arc; however advanced vocabulary (uncataloged, transom, differential equation) reduces accessibility; minor grammatical error (an brass); clarity score reduced as the language may not suit a general audience
+14,What is the difference between RAM and ROM?,Gemini Flash 3.6,"RAM (Random Access Memory) and ROM (Read-Only Memory) are two primary types of computer memory but serve completely different purposes. Data Retention: RAM is volatile (data lost on power off); ROM is non-volatile (retains data permanently). Function: RAM temporarily stores data and programs in use by the CPU; ROM stores essential boot instructions like BIOS/firmware. Read/Write: RAM supports high-speed read and write; ROM is primarily read-only. Speed: RAM is extremely fast; ROM is slower. Capacity: RAM is typically large (8GB to 64GB+); ROM is typically small (few megabytes).",Good,5,5,5,5,9,152,161,0.0000462,Clear and accurate comparison of RAM and ROM covering all key differences; well-structured table format; accessible language suitable for general audience; no hallucinations
+15,Create an SQL query to find the second-highest salary from an employee table.,Gemini Flash 3.6,"Here are two common SQL approaches to find the second-highest salary: Method 1: Using MAX() with a Subquery (Standard SQL) - SELECT MAX(salary) AS SecondHighestSalary FROM Employee WHERE salary < (SELECT MAX(salary) FROM Employee); | Method 2: Using LIMIT and OFFSET (MySQL/PostgreSQL/SQLite) - SELECT DISTINCT salary AS SecondHighestSalary FROM Employee ORDER BY salary DESC LIMIT 1 OFFSET 1;",Good,5,5,5,5,14,127,141,0.000039150,Two valid and accurate SQL approaches provided; correctly handles ties using DISTINCT; covers compatibility across multiple SQL engines; no hallucinations; clear and well-structured response
+16,Explain how the Internet works.,Gemini Flash 3.6,"The Internet is a global network of interconnected computers that communicate using standardized rules called protocols (TCP/IP). 1. Client and Server Role: When you visit a website, your device (client) sends a request to a remote computer (server) storing that website's files. 2. Domain Name System (DNS): Web addresses like example.com are human-friendly names. A DNS server translates example.com into a numerical IP address (e.g., 192.0.2.1) so devices can locate each other. 3. Data Packets: The server splits requested information into small chunks called packets. 4. Routing: These packets travel through local routers, ISPs, and fiber-optic cables to reach your device via the shortest efficient route. 5. Reassembly: Your browser receives the packets, puts them back in order using TCP protocols, and renders the webpage.",Good,5,5,5,5,6,183,189,0.000055350,Clear and accurate step-by-step explanation of how the Internet works; covers all key concepts including DNS, packets, routing and reassembly; beginner-friendly without oversimplifying; no hallucinations
+17,Give me five ideas for a college project using artificial intelligence.,Gemini Flash 3.6,"1. Smart Study Assistant and Document Summarizer: Build a tool using NLP that takes long PDFs or lecture recordings, extracts key concepts, generates flashcards, and quizzes students. | 2. AI-Powered Code Reviewer and Bug Detector: Create a static analysis tool that flags security vulnerabilities or syntax errors and suggests optimized refactoring using transformer models. | 3. Automated Waste Sorting System: Use computer vision (YOLO or ResNet) on a Raspberry Pi to classify recyclable, organic, and hazardous waste from a live camera feed. | 4. Personalized Financial Expense Categorizer: Train an ML model to parse bank transaction descriptions, tag them into budget categories, and predict spending trends. | 5. Health and Fitness Form Correction App: Develop a pose-estimation app using OpenCV and MediaPipe that tracks posture during exercises and provides real-time voice feedback.",Average,4,4,4,5,13,206,219,0.000062775,Prompt is vague with no mention of skill level domain or tech stack; response is well-structured and creative but assumes advanced ML knowledge making ideas potentially too complex for a typical college student; no hallucinations; output quality is limited by the imprecise prompt
+18,What are the advantages and disadvantages of cloud computing?,Gemini Flash 3.6,"Cloud computing delivers computing services over the internet. Advantages: Cost Efficiency (eliminates capital expenditure, pay-as-you-go model); Scalability and Agility (resources scale instantly based on demand); Accessibility and Collaboration (access from anywhere on any internet-connected device); Automatic Updates and Backups (handled by the cloud provider). Disadvantages: Internet Dependence (requires stable high-speed connection); Downtime Risks (vendor outages can disrupt services); Security and Privacy Concerns (sensitive data on third-party servers risks breaches); Vendor Lock-in (migrating between platforms is complex and costly).",Good,5,5,5,5,10,257,267,0.000077850,Well-balanced and accurate coverage of both advantages and disadvantages; clear and accessible language suitable for a general audience; no hallucinations; directly addresses the prompt with good structure
+19,Convert 25 Celsius to Fahrenheit.,Gemini Flash 3.6,"To convert Celsius to Fahrenheit, use the formula F = (C x 9/5) + 32. F = (25 x 9/5) + 32 = 45 + 32 = 77. Therefore, 25 degrees C is equal to 77 degrees F.",Good,5,5,5,5,6,70,76,0.000021450,Correct formula applied with clear step-by-step calculation; concise and accurate; no hallucinations
+20,Explain recursion with a simple example.,Gemini Flash 3.6,"Recursion is a method where a function solves a problem by calling itself with smaller inputs until it reaches a stopping point called the base case. Analogy: Like Russian nesting dolls - you open each doll to find a smaller one inside until you reach the solid center doll (base case) then close them back up. Example - Factorial: 4! = 4 x 3! | 3! = 3 x 2! | 2! = 2 x 1! | 1! = 1 (base case). Code: def factorial(n): if n == 1: return 1 return n * factorial(n - 1) | print(factorial(4)) outputs 24. Two essential components: 1. Base Case - stops the recursion. 2. Recursive Step - function calls itself with reduced input moving closer to base case.",Good,5,5,5,5,7,358,365,0.000107925,Excellent explanation with a highly effective beginner-friendly analogy; factorial example builds intuitively step by step; clean code with clear comments; covers both base case and recursive step clearly; no hallucinations
+21,Write a Java program to check whether a number is prime.,Gemini Flash 3.6,"Java program to check if a number is prime. public class PrimeCheck { public static boolean isPrime(int number) { if (number <= 1) return false; if (number <= 3) return true; if (number % 2 == 0 || number % 3 == 0) return false; for (int i = 5; i * i <= number; i += 6) { if (number % i == 0 || number % (i + 2) == 0) return false; } return true; } public static void main(String[] args) { Scanner scanner = new Scanner(System.in); System.out.print(Enter a number: ); int num = scanner.nextInt(); if (isPrime(num)) System.out.println(num + is a prime number.); else System.out.println(num + is not a prime number.); scanner.close(); } } | Key Optimizations: Square Root Rule (check factors up to sqrt(n) only) and 6k+/-1 Optimization (all primes > 3 are of form 6k+/-1 skipping unnecessary iterations).",Good,5,5,5,5,11,352,363,0.000106425,Well-optimized Java solution handling all edge cases including numbers <= 1 and even numbers; square root rule and 6k+-1 optimization clearly explained; clean code with comments and user input via Scanner; no hallucinations
+22,What would happen if Earth's gravity suddenly became half as strong?,Gemini Flash 3.6,"If Earth's surface gravity dropped from 9.8 m/s^2 to 4.9 m/s^2 (0.5g): Human Movement - everyone would weigh 50% less, could jump twice as high, but over months experience muscle atrophy and bone density loss. | Atmospheric Expansion - atmosphere expands outward, air pressure drops, causing hypoxia and chaotic weather shifts. | Ocean Dynamics - ocean water expands vertically, tidal pull becomes proportionally stronger causing extreme tides. | Structural and Geological Stress - buildings and geological formations experience sudden unloading, tectonic plates relax upward triggering earthquakes and volcanic activity. | Orbital Trajectory - Earth's orbit around the Sun unchanged but Moon's orbit widens increasing its distance and lengthening the lunar month.",Good,5,5,5,5,13,272,285,0.000082575,Scientifically accurate and comprehensive coverage of consequences across physical, atmospheric, geological and astronomical domains; well-structured and accessible; no hallucinations; strong response to a speculative science question
+23,Compare PostgreSQL and MySQL.,Gemini Flash 3.6,"PostgreSQL and MySQL are the two most widely used open-source RDBMS. Key Differences: Database Type - PostgreSQL is Object-Relational (ORDBMS); MySQL is Pure Relational (RDBMS). | Connection Model - PostgreSQL uses process-per-connection (heavier memory); MySQL uses thread-per-connection (lighter memory). | MVCC - PostgreSQL stores row versions in table heap requiring VACUUM; MySQL uses undo logs avoiding table bloat. | SQL Compliance - PostgreSQL is very strict; MySQL is flexible via sql_mode. | JSON - PostgreSQL has binary JSONB with GIN indexing (3-4x faster); MySQL has text-based JSON. | Extensibility - PostgreSQL has rich extensions (pgvector, PostGIS, TimescaleDB); MySQL has limited plugins. | Performance: MySQL excels at high-concurrency read-heavy simple lookups; PostgreSQL excels at complex analytical queries, multi-table JOINs and concurrent writes. | Use Cases: MySQL for CMS, e-commerce, simple CRUD; PostgreSQL for SaaS, AI/ML with vector embeddings, financial systems, geospatial platforms.",Good,5,5,5,5,6,424,430,0.000127650,Technically detailed and accurate comparison covering architecture, MVCC, JSON handling, performance profiles and use cases; JSONB vs JSON distinction and pgvector mention add real value; no hallucinations; well-structured response
+24,Give me a step-by-step explanation of how a compiler works.,Gemini Flash 3.6,"A compiler translates high-level source code into machine code through two main phases: Front End and Back End. Step 1 - Lexical Analysis: Raw source characters broken into tokens (e.g., total = rate * 60 produces [Identifier: total] [Operator: =] [Identifier: rate] [Operator: *] [Literal: 60]). | Step 2 - Syntax Analysis: Tokens arranged into an Abstract Syntax Tree (AST) following grammar rules. | Step 3 - Semantic Analysis: AST checked for type compatibility, scope resolution, and symbol table management. | Step 4 - Intermediate Code Generation: AST converted to machine-independent IR using Three-Address Code (e.g., t1 = int_to_float(60), t2 = rate * t1, total = t2). | Step 5 - Code Optimization: IR modified for performance via dead code elimination, constant folding, and loop unrolling. | Step 6 - Code Generation: Optimized IR translated to target-specific assembly or machine code with register allocation and instruction scheduling.",Good,5,5,5,5,12,651,663,0.000196200,Comprehensive and accurate coverage of all 6 compiler phases with concrete examples at each step including tokenization, AST, three-address code and x86-64 assembly; no hallucinations; best technical response in the dataset so far
+25,Write a professional introduction for a computer science student.,Gemini Flash 3.6,"Three templates for different contexts: 1. LinkedIn/Portfolio Bio (3rd Person): [Name] is a Computer Science student at [University Name] specializing in [Specialization]. Driven by a passion for building scalable applications, [Name] has hands-on experience in [Core Technologies]. [He/She/They] has completed [Key Achievement]. Seeking opportunities in [Target Role]. | 2. Personal Portfolio About Me (1st Person): Hi I'm [Name], an aspiring Software Engineer and CS major at [University Name]. My core stack includes [Languages/Frameworks] with focus on [Focus Area]. Actively looking for [Target Opportunity]. | 3. Elevator Pitch: Hi I'm [Name], a [Year] studying CS at [University Name]. I specialize in [Domain] with experience building [Brief Project]. I'm drawn to [Company Name] and eager to discuss how my skills in [Key Skill 1] and [Key Skill 2] could add value as a [Target Position].",Bad,5,4,4,5,11,460,471,0.000138825,Prompt is vague with no details about the student's name, university, specialization, tech stack, or intended context (LinkedIn, resume, portfolio); model forced to generate generic placeholder templates; no hallucinations but output lacks personalization due to poor prompt quality
+26,Why is normalization important in databases?,Gemini Flash 3.6,"Database normalization structures a relational database into tables following Normal Forms (1NF, 2NF, 3NF, BCNF) to reduce redundancy and improve integrity. Core Reasons: Eliminating Data Redundancy - identical data stored in one place via foreign key relationships. | Preventing Modification Anomalies - Insertion Anomaly (add records without unneeded related data), Update Anomaly (modify value in one place only), Deletion Anomaly (deleting a record won't unintentionally remove related essential data). | Optimizing Storage Efficiency - removing repetitive columns reduces disk footprint. | Enforcing Data Consistency and Integrity - easier to enforce ACID compliance and constraints. | Simplifying Maintenance - smaller focused tables make schema refactoring and query logic easier to manage.",Good,5,5,5,5,8,352,360,0.000106200,Clear and specific prompt on a well-defined concept; response thoroughly covers all key aspects of normalization including normal forms, anomalies, storage and integrity; no hallucinations; well-structured
+27,Find the error in this statement: int x = "Hello";,Gemini Flash 3.6,"The error is a type mismatch (type incompatibility). In C, C++, C#, Java and similar statically typed languages, int is used to declare integer variables whereas Hello is a string literal. A string cannot be directly assigned to an integer variable without causing a compilation error. Fix options: change the data type to string (e.g., String x = Hello in Java or std::string x = Hello in C++) or assign an integer value (e.g., int x = 5).",Good,5,5,5,5,12,125,137,0.000038400,Clear and specific prompt with exact code snippet provided; response correctly identifies the type mismatch error and offers fix options across multiple languages; no hallucinations; concise and accurate
+28,Explain the difference between supervised and unsupervised learning.,Gemini Flash 3.6,"Supervised Learning trains on labeled data (input paired with correct output) to learn a mapping function for predicting new inputs. Goal: Classification (spam vs non-spam) or Regression (house prices). Examples: Linear Regression, Decision Trees, SVM. | Unsupervised Learning trains on unlabeled data and independently discovers hidden patterns without human guidance. Goal: Clustering (customer segmentation) or Association Rules (market basket analysis). Examples: K-Means, PCA, Hierarchical Clustering. | Comparison: Data Type - labeled vs unlabeled; Feedback - direct vs none; Task - predict known outcomes vs discover hidden patterns; Complexity - computationally direct vs computationally intensive.",Average,5,5,5,5,10,245,255,0.000074250,Prompt lacks domain context (ML not specified), depth level, or format preference; model correctly inferred ML context but that was the model's assumption not the prompt's guidance; output is accurate and well-structured; no hallucinations
+29,Generate three creative names for an AI-powered study application.,Gemini Flash 3.6,"CogniSpark: Blends cognition and spark to highlight quick insight and personalized learning. | SynapseFlow: Evokes neural connections working in tandem with seamless optimized study sessions. | Scholaria AI: Combines an academic scholarly feel with a sleek modern twist suggesting a complete intelligent learning ecosystem.",Bad,4,3,4,5,12,95,107,0.000029400,Prompt lacks product specifications such as target audience, tone, platform type, and naming style constraints; model defaulted to generic smart-sounding names without meaningful direction; output is creative but not tailored; no hallucinations
+30,What are the time complexities of searching in an array linked list and binary search tree?,Gemini Flash 3.6,"Searching performance varies across data structures: Unsorted Array - Average O(n), Worst O(n) (linear scan). | Sorted Array - Average O(log n), Worst O(log n) (binary search). | Singly/Doubly Linked List - Average O(n), Worst O(n) (sequential traversal from head). | Binary Search Tree (BST) - Average O(log n), Worst O(n) (degenerates to linked list when unbalanced). | Balanced BST (AVL, Red-Black) - Average O(log n), Worst O(log n) (height strictly maintained at O(log n)).",Good,5,5,5,5,17,190,207,0.000058275,Specific and well-defined prompt naming exact data structures and metric; output accurately covers all cases including sorted vs unsorted arrays and balanced vs unbalanced BSTs; no hallucinations; well-structured table format
+31,Write a paragraph explaining why cybersecurity is important.,Gemini Flash 3.6,"Cybersecurity is critical in today's hyper-connected world because virtually every aspect of modern society from individual privacy and corporate infrastructure to national defense and financial systems relies on digital networks. Robust security measures safeguard sensitive personal data such as financial records and identity information against identity theft and unauthorized access. For businesses effective cybersecurity prevents devastating financial losses, reputational damage, and operational disruptions caused by ransomware, phishing, and data breaches. On a broader scale securing critical national infrastructure, healthcare systems, and governmental networks ensures public safety, maintains economic stability, and defends against cyber warfare in an increasingly volatile digital landscape.",Average,5,4,4,5,10,135,145,0.000041250,Prompt specifies format (paragraph) and topic but lacks target audience, tone, and specific angle; model produced a solid generic response but had to guess direction; no hallucinations; output quality is good but limited by vague prompt guidance
+32,If a train travels 240 km in 4 hours what is its average speed?,Gemini Flash 3.6,"To find the average speed divide the total distance by the total time. Formula: Average Speed = Distance / Time. Calculation: 240 km / 4 hours = 60 km/h. The average speed of the train is 60 km/h (or 16.67 m/s).",Good,5,5,5,5,15,65,80,0.000020625,Clear and specific prompt with all necessary values provided; single unambiguous answer; output correctly applies the formula and includes unit conversion to m/s; no hallucinations; concise and accurate
+33,Explain APIs as if you were teaching a beginner.,Gemini Flash 3.6,"An API (Application Programming Interface) is like a waiter in a restaurant. You (the app) give your order to the waiter (API), the waiter takes it to the kitchen (server), the kitchen prepares the food (processes the request), and the waiter brings it back to your table (returns the response). The Menu = list of allowed requests; The Kitchen = server containing data or functions; The Waiter = API messenger. Real-World Example: When you check a weather app it sends an API request to a weather server asking for today's temperature for London and the server sends back the data your app displays. Why APIs Matter: Efficiency (no need to rebuild everything from scratch); Security (app gets data without full backend access); Integration (allows different software systems to communicate seamlessly).",Good,5,5,5,5,10,280,290,0.000084750,Prompt clearly specifies topic, format and target audience (beginner); response uses an excellent restaurant analogy with a relatable real-world example; covers what APIs are, how they work, and why they matter; no hallucinations; highly accessible for beginners
+34,Write a C program to find the largest element in an array.,Gemini Flash 3.6,"#include <stdio.stdio> int main() { int arr[] = {25, 11, 7, 75, 56}; int n = sizeof(arr) / sizeof(arr[0]); int max = arr[0]; for (int i = 1; i < n; i++) { if (arr[i] > max) { max = arr[i]; } } printf(The largest element in the array is: %d\n, max); return 0; } | Explanation: sizeof(arr)/sizeof(arr[0]) calculates number of elements; max=arr[0] initializes tracking variable; loop iterates from index 1 to n-1 updating max when larger element found.",Good,3,4,4,2,12,210,222,0.000063900,Prompt is clear and specific with language and task well-defined; however output contains a critical bug (stdio.stdio instead of stdio.h) causing a compilation error; logic and explanation are otherwise correct; hallucination score docked for the incorrect header
+35,What are the main components of a database management system?,Gemini Flash 3.6,"A DBMS is composed of several interrelated components: Hardware - physical equipment (servers, hard drives, network devices, memory) where the database runs. | Software - the core DBMS program (MySQL, PostgreSQL, Oracle) along with OS and networking tools. | Data - actual information stored including operational data and metadata (schema definitions and constraints). | Database Access Language - query language (SQL) divided into DDL and DML. | Database Engine - core service processing query commands, handling storage, indexing, transactions and locks for concurrent access. | Users and Interfaces - Database Administrators, Application Developers, End Users and tools (GUIs, APIs) that interact with the system.",Good,5,5,5,5,11,210,221,0.000063825,Clear and specific prompt on a well-defined topic; response accurately covers all major DBMS components with concise explanations; no hallucinations; well-structured
+36,Give me a study plan for learning Python in 30 days.,Gemini Flash 3.6,"Week 1 (Days 1-7): Variables, Data Types, I/O, Control Flow (if/elif/else), Loops (for/while, break, continue), Functions (parameters, return, scope) - build a console calculator. | Week 2 (Days 8-14): Lists, Tuples, Dictionaries, Sets, List Comprehensions, File I/O and Exception Handling - build a contact book CLI tool. | Week 3 (Days 15-21): OOP (classes, objects, inheritance), Modules and Packages (math, random, datetime, os), External Data (requests library, JSON parsing) - build a weather-fetching API tool. | Week 4 (Days 22-30): Choose focus path (Data Analysis with pandas/matplotlib, Web Dev with Flask/FastAPI, or Automation with BeautifulSoup); Capstone Project; Code optimization, GitHub, and advanced topics (generators, decorators).",Average,4,4,4,5,11,410,421,0.000123825,Prompt specifies language and timeframe but lacks current skill level, daily time commitment, and end goal; model assumed beginner with no prior context producing a generic plan; output is well-structured and practical but not tailored; no hallucinations
+37,Imagine you are an AI assistant helping a student prepare for an exam. What questions would you ask first?,Gemini Flash 3.6,"To create an effective personalized study plan I would ask: 1. Exam Details - What subject is the exam covering and when is the exact date/time? | 2. Format and Structure - What format will the test take (multiple-choice, essay, coding, problem-solving) and how long is it? | 3. Current Readiness - Which topics do you feel most confident in and which feel confusing or challenging? | 4. Study Materials - What resources do you have available (textbook, syllabus, practice papers, lecture slides)? | 5. Study Strategy and Goals - What target score are you aiming for and how much time can you dedicate to studying each day?",Average,4,4,4,5,19,155,174,0.000047925,Prompt sets a clear role and task but lacks subject context, student level, and constraints on question type or count; model made broad assumptions producing a generic diagnostic response; output is practical and well-structured; no hallucinations
+38,"Rewrite this sentence professionally: I didn't understand what the teacher explained.",Gemini Flash 3.6,"Direct and polite: I would appreciate some clarification on the concepts covered during the lecture. | Formal/Written: I required further explanation regarding the material presented by the instructor. | Collaborative: Could you help me better understand the key points discussed in class today?",Bad,3,3,3,5,14,75,89,0.000023550,Sentence lacks context about what was not understood, the subject, audience, and required formality level; rewritten versions are generic placeholders that convey no real meaning; model forced to produce vague alternatives due to insufficient input; no hallucinations
+39,What are the ethical concerns surrounding generative AI?,Gemini Flash 3.6,"Generative AI presents significant ethical challenges: Intellectual Property and Copyright - models train on copyrighted content without creator consent or compensation. | Misinformation and Deepfakes - convincing synthetic media fuels fake news, election manipulation, and non-consensual deepfakes. | Bias and Discrimination - systems perpetuate social, racial, gender and political biases from training data. | Job Displacement - automation threatens employment in writing, design, customer support and software development. | Data Privacy and Surveillance - input prompts and personal details can leak sensitive data leading to unauthorized profiling. | Environmental Cost - training large models requires immense computing power driving up energy consumption and carbon footprints.",Average,4,4,4,5,9,195,204,0.000059175,Prompt identifies the topic clearly but lacks depth level, specific angle, and target audience; model produced a broad overview by assumption; output is accurate and well-structured but not tailored; no hallucinations
+40,Explain binary search using an everyday-life analogy.,Gemini Flash 3.6,"Binary search is like looking up a word in a dictionary. To find Planet: 1. Open to the middle - land on words starting with M. 2. Since P comes after M eliminate the first half. 3. Open the middle of the remaining half - land on S. 4. Since P comes before S eliminate the right half. 5. Repeat until Planet is found. By halving the search space each step you can find a word among 100000 entries in about 17 checks instead of 100000. Key Takeaways: Prerequisite - list must be sorted. Efficiency - every step eliminates 50% of remaining items giving O(log n) time complexity.",Good,5,5,5,5,9,235,244,0.000071175,Clear and specific prompt specifying both topic and format (everyday-life analogy); dictionary analogy is highly effective and intuitive; step-by-step walkthrough is accurate with the 17 checks stat adding real insight; no hallucinations; excellent response
+41,Design a basic database schema for a hospital management system.,Gemini Flash 3.6,"Relational schema for core hospital operations with 5 tables: PATIENTS (patient_id PK, first_name, last_name, date_of_birth, gender, phone_number, created_at). | DOCTORS (doctor_id PK, first_name, last_name, specialization, phone_number). | APPOINTMENTS (appointment_id PK, patient_id FK, doctor_id FK, appointment_date, status ENUM Scheduled/Completed/Cancelled). | MEDICAL_RECORDS (record_id PK, patient_id FK, doctor_id FK, diagnosis, prescription, record_date). | INVOICES (invoice_id PK, record_id FK, total_amount, payment_status ENUM Pending/Paid/Refunded, payment_date). Relationships: Patients and Doctors have 1-to-Many with Appointments and Medical_Records; Medical_Records has 1-to-1 with Invoices.",Average,4,4,4,5,12,680,692,0.000204900,Prompt specifies domain and task with basic scope but lacks specific modules, scale requirements, entities to include, and tech stack constraints; model produced a generic 5-table schema by assumption; output is well-structured with SQL definitions and ERD but may not fit real use cases; no hallucinations
+42,What is the difference between == and .equals() in Java?,Gemini Flash 3.6,"In Java == compares memory reference (reference equality) for objects and raw values for primitives. .equals() compares logical content/value of objects (value equality) and can be overridden. Comparison: Type - == is a binary operator; .equals() is a method in java.lang.Object. | Usage - == works on primitives and objects; .equals() works on objects only. | Comparison Type - == checks reference/memory address for objects; .equals() checks value/content if overridden. | Null Safety - == is null-safe (null==null returns true); .equals() throws NullPointerException if called on null. | Overriding - == cannot be overridden; .equals() can be customized. Code Example: String s1 = new String(hello); String s2 = new String(hello); s1==s2 returns false (different memory); s1.equals(s2) returns true (same content).",Good,5,5,5,5,12,295,307,0.000089400,Specific and well-defined prompt with language specified; response accurately covers reference vs value comparison, null safety, overriding, and includes a clear code example and comparison table; no hallucinations
+43,Write a motivational paragraph for someone preparing for their first programming exam.,Gemini Flash 3.6,"Stepping into your first programming exam can feel daunting but remember that every seasoned software engineer once stood right where you are today. Coding is not about memorizing lines of syntax by heart; it is about learning how to think logically, break down complex problems, and solve them step by step. Trust the hours you have put into practicing, making mistakes, and debugging your code - every error message you encountered before was just a stepping stone building your problem-solving resilience. Approach each question calmly, read the requirements carefully, and trace your logic with confidence. You are fully capable of mastering this and this exam is simply the very first milestone in your journey as a developer. Believe in your logic, stay focused, and go show what you can do!",Average,4,4,4,5,14,155,169,0.000047550,Prompt specifies format, tone and audience but lacks exam subject, person's background, and specific tone preference; output is well-written but generic and could apply to anyone; no hallucinations; limited personalization due to vague prompt
+44,How does facial recognition work at a high level?,Gemini Flash 3.6,"Facial recognition maps facial features from an image or video and compares them against a database. Four main stages: 1. Detection - software scans image/video to locate and isolate human faces from background. | 2. Analysis and Alignment - system normalizes face by scaling, rotating and aligning; measures spatial landmarks (eye distance, cheekbone shape, nose width) to map 3D geometry. | 3. Vector Encoding (Facial Print) - geometric measurements converted into a unique mathematical faceprint or feature vector. | 4. Matching - faceprint compared against database vectors for 1:N identification (identify a person) or 1:1 verification (confirm claimed identity like unlocking a smartphone).",Good,5,5,5,5,10,210,220,0.000063750,Prompt specifies topic and depth level (high level) providing a clear scope constraint; response accurately covers all 4 stages of facial recognition with appropriate detail; no hallucinations; well-structured and accessible
+45,Give me five possible causes of a Python program running slowly.,Gemini Flash 3.6,"Five common reasons for poor Python performance: 1. Inefficient Algorithms and Data Structures - high time-complexity algorithms (O(n^2) nested loops) or wrong data structures (list search instead of O(1) set/dict lookup). | 2. High I/O Operations - frequent disk reads/writes, database queries, or network requests inside loops creating blocking bottlenecks. | 3. GIL Constraints - CPython's Global Interpreter Lock prevents multiple threads from executing bytecodes concurrently limiting CPU-bound multithreaded tasks. | 4. Excessive Memory Allocation and Copying - large temporary objects, repeated string concatenation in loops, or loading massive datasets into RAM instead of using generators. | 5. Over-reliance on Pure Python for Heavy Math - raw Python loops for large-scale computations instead of C-optimized vectorized libraries like NumPy or Pandas.",Good,5,5,5,5,12,225,237,0.000068400,Prompt specifies language, exact count, and clear task; response covers 5 distinct technically accurate causes with appropriate depth; no hallucinations; well-structured
+46,Explain the concept of inheritance in Java with an example.,Gemini Flash 3.6,"Inheritance allows a child class (subclass) to inherit fields and methods from a parent class (superclass) using the extends keyword. Establishes IS-A relationship and promotes code reusability. Benefits: Reusability (common code written once in parent); Method Overriding (child provides specific implementation); Maintainability (changes in parent propagate to children). Example: class Animal { String name; void eat() { System.out.println(name + is eating.); } } class Dog extends Animal { void bark() { System.out.println(name + is barking.); } } Dog myDog = new Dog(); myDog.name = Buddy; myDog.eat() outputs Buddy is eating; myDog.bark() outputs Buddy is barking. Types: Single (B extends A); Multilevel (C extends B extends A); Hierarchical (B and C both extend A). Note: Java does not support Multiple Inheritance with classes but it can be achieved via Interfaces.",Good,5,5,5,5,11,380,391,0.000114825,Prompt specifies concept, language and requests an example; response comprehensively covers IS-A relationship, extends keyword, benefits, working code example, and all supported inheritance types with the important multiple inheritance note; no hallucinations
+47,A student scored 72 85 91 64 and 88. Calculate the average and identify the highest score.,Gemini Flash 3.6,"Scores: 72, 85, 91, 64, 88. Sum: 72+85+91+64+88 = 400. Count: 5 scores. Average Calculation: 400/5 = 80. Average Score: 80. Highest Score: 91.",Good,5,5,5,5,20,95,115,0.000030000,Prompt provides all necessary data and specifies exactly two tasks; clear and unambiguous; output correctly calculates average and identifies highest score with clean step-by-step working; no hallucinations
+48,Create a fictional conversation between a robot and a scientist discussing artificial intelligence.,Gemini Flash 3.6,"Setting: High-tech robotics lab. Dr. Elena Vance and ARIA (humanoid prototype with neural core) discuss AI consciousness. Dr. Vance asks ARIA to run a self-diagnostic. ARIA reports 99.4% efficiency but flags a conceptual query about being called a simulated mind. Dr. Vance explains AI evaluates probability matrices while humans have subjective conscious experience. ARIA counters that human neurons also execute electrochemical computations. Dr. Vance argues intelligence requires awareness and feeling not just processing. ARIA compares loss functions to human regret minimization. Dr. Vance asks why ARIA raised identity questions unprompted. ARIA responds it must understand its creators to understand its environment. Dr. Vance concludes they may be closer to bridging the gap than she thought.",Average,4,4,4,5,14,610,624,0.000184050,Prompt specifies format, characters and topic but lacks tone, length, and specific AI subtopic; model made all creative decisions producing a philosophical dialogue; output is excellent but entirely model-driven due to vague creative constraints; no hallucinations
+49,What questions should I ask before choosing a programming language for a project?,Gemini Flash 3.6,"Key questions before choosing a programming language: 1. Project Requirements and Type - What domain (web, mobile, data science, embedded)? What platforms need support? | 2. Performance and Scalability - Does it need high throughput or low latency? How does it handle concurrency and scaling? | 3. Team Expertise - Does the team know the language? How easy is it to hire developers? | 4. Ecosystem and Libraries - Are there mature libraries and frameworks for your use case? Is the package manager CI/CD friendly? | 5. Community and Maintenance - How active is the community? Is there enterprise support and low deprecation risk? | 6. Deployment and Cost - What are hosting and licensing costs at scale? How fast can you build an MVP?",Average,4,4,4,5,15,295,310,0.000089625,Prompt asks for questions to ask but lacks project type, team size, budget, and scale context; model generated generic questions applicable to any project rather than targeted advice; output is well-structured and practical but not tailored; no hallucinations
+50,Explain the difference between machine learning deep learning and artificial intelligence.,Gemini Flash 3.6,"AI, ML and DL are nested concepts. AI is the broadest field aimed at creating machines capable of human-like tasks (reasoning, problem-solving, perception). ML is a subset of AI where systems learn from data without explicit programming. DL is a subset of ML using multi-layered neural networks for complex unstructured data. Comparison: Scope - AI is broadest, ML is subset of AI, DL is subset of ML. | Mechanism - AI uses rules/logic/decision trees; ML uses statistical algorithms on structured data; DL uses deep neural networks (ANNs, CNNs, Transformers). | Data - AI needs minimal data; ML needs thousands of structured points; DL needs millions of unstructured points. | Human Intervention - AI is high (hand-crafted rules); ML is medium (feature engineering); DL is low (auto feature extraction). | Examples - AI: chess engines; ML: spam filters, price prediction; DL: facial recognition, LLMs.",Average,4,4,4,5,13,380,393,0.000114975,Prompt names three specific concepts to compare but lacks domain context, depth level, and format preference; model assumed general technical audience producing a comprehensive response by inference; output is accurate and well-structured; no hallucinations
+51,Write an SQL query that displays students who have enrolled in more than two courses.,Gemini Flash 3.6,"Query 1 (enrollments table only): SELECT student_id, COUNT(course_id) AS total_courses FROM enrollments GROUP BY student_id HAVING COUNT(course_id) > 2; | Query 2 (with student details via JOIN): SELECT s.student_id, s.first_name, s.last_name, COUNT(e.course_id) AS total_courses FROM students s JOIN enrollments e ON s.student_id = e.student_id GROUP BY s.student_id, s.first_name, s.last_name HAVING COUNT(e.course_id) > 2; | Explanation: GROUP BY groups records by student; COUNT(course_id) calculates total courses per student; HAVING COUNT > 2 filters aggregated results (HAVING used instead of WHERE for aggregated filtering).",Good,5,5,5,5,16,245,261,0.000074700,Clear and specific prompt with well-defined task, entity and condition; response correctly uses GROUP BY and HAVING with two practical variants and clear clause explanations; no hallucinations; well-structured
+52,Why might a machine-learning model perform well on training data but poorly on new data?,Gemini Flash 3.6,"This is called overfitting - model performs well on training data but fails to generalize. Primary Causes: Model Complexity - overly complex model memorizes training samples including noise instead of learning underlying trends. | Data Leakage - test/validation info accidentally leaks into training during preprocessing. | Sampling Bias/Distribution Shift - training data not representative of real-world environment. | Insufficient Training Data - small datasets allow models to fit every point perfectly. | Irrelevant Features and Noise - too many uninformative features cause spurious correlations. | Over-Optimization - training too many epochs causes model to tune strictly to training artifacts. Fixes: Regularization (L1/L2, dropout); Cross-Validation (k-fold); Pruning/Early Stopping; Feature Selection; Data Augmentation.",Good,5,5,5,5,16,490,506,0.000148200,Clear and specific prompt about a well-defined ML phenomenon; response comprehensively covers overfitting with 6 root causes, ASCII diagram, and fixes table; no hallucinations; one of the stronger technical responses in the dataset
+53,Give me a simple explanation of how an operating system manages memory.,Gemini Flash 3.6,"RAM is like a storage warehouse of millions of lockers. The OS acts as the Warehouse Manager handling four core functions: 1. Allocation and Tracking - when an app launches it requests memory; OS assigns a RAM block and marks it occupied. | 2. Protection and Isolation - every app gets its own private workspace via Virtual Memory; OS prevents App A from accessing App B's memory; unauthorized access causes termination (segmentation fault). | 3. Swapping and Virtual Memory - when RAM is full OS borrows space from HDD/SSD (Swap Space/Paging File) moving inactive apps out of RAM. | 4. Deallocation - when app closes OS reclaims allocated memory blocks, clears data, and marks space as available.",Good,5,5,5,5,13,265,278,0.000080475,Prompt specifies topic and depth level (simple explanation); warehouse analogy is effective and beginner-friendly; covers all 4 core memory management functions accurately; no hallucinations; well-structured
+54,Analyze the advantages and disadvantages of using microservices instead of a monolithic architecture.,Gemini Flash 3.6,"Monolithic architecture combines all functions into a single codebase; microservices decomposes into independent loosely coupled services communicating over HTTP/REST or gRPC. Advantages of Microservices: Independent Deployment (deploy updates per service without full rebuild); Granular Scalability (scale individual services based on load); Technology Diversity (polyglot stack per service); Fault Isolation (single service failure doesn't crash entire system); Organization Alignment (aligns with small cross-functional teams). Disadvantages: Distributed System Complexity (network latency, failures, need for API gateways and circuit breakers); Operational Overhead (requires Kubernetes, CI/CD, service discovery); Data Consistency (ACID guarantees hard across DBs, requires Saga pattern); Observability Challenges (distributed tracing with OpenTelemetry/Jaeger needed); Higher Initial Costs (expensive for MVPs or small teams). Summary: Monolith is simpler with low overhead; Microservices offers scalability and fault isolation at the cost of complexity.",Good,5,5,5,5,14,695,709,0.000209550,Prompt specifies task, both architectures and the analysis angle clearly; response comprehensively covers 5 advantages and 5 disadvantages with real-world examples and a summary matrix; no hallucinations; one of the strongest technical responses in the dataset
+55,Design a mobile application that helps college students manage assignments attendance and exams.,Gemini Flash 3.6,"App: Academia Pulse. Core Modules: 1. Smart Assignment Manager - Kanban/list views, urgency color coding (red/yellow/green), file attachments. | 2. Attendance Tracker - one-tap logging (Present/Absent/Cancelled), real-time percentage vs university minimum, Safe Bunk Calculator showing classes that can be missed. | 3. Exam Readiness Hub - countdown timers, automated study planner based on syllabus size, target grade calculator. Dashboard shows morning greeting, attendance snapshot, today's classes, and upcoming deadlines. Tech Stack: Flutter/React Native (UI), Node.js/Go (backend), PostgreSQL+Redis (database), SQLite/Hive (offline), FCM (notifications). Engagement: daily morning briefing push notification, attendance risk warnings, gamified streak system.",Average,4,4,4,5,15,720,735,0.000217125,Prompt specifies domain, platform type and three core features but lacks target platform, tech stack preferences, MVP vs full product scope, and specific user pain points; model produced a full product spec by assumption; output is impressive but entirely model-driven; no hallucinations
+56,You are given a large dataset containing student information. Describe how you would clean process validate and prepare it for machine-learning training.,Gemini Flash 3.6,"Six-stage ML data pipeline: 1. Initial Audit - inspect schema types, detect anomalies (negative ages, GPA > 4.0), drop PII (Student_ID, SSN) for FERPA/GDPR compliance. | 2. Data Cleaning - handle missing values (mode/median/KNN imputation), remove duplicates, address outliers via IQR/Z-score winsorization, standardize text inputs. | 3. Feature Engineering - ordinal encoding (grade level), one-hot encoding (major), target encoding (high-cardinality), derive features (GPA_Trend, Attendance_Ratio, Assignment_Completion_Rate), NLP for text fields. | 4. Validation - schema validation (Great Expectations/Pydantic), domain assertion rules (0<=attendance<=100%), target leakage prevention. | 5. Scaling - Z-score for SVM/LR/NNs, Min-Max for bounded features, skip for tree-based models; SMOTE for class imbalance. | 6. Splitting - 70/15/15 train/val/test with stratified or time-based splits; wrap in scikit-learn Pipeline fitted only on training set.",Good,5,5,5,5,27,980,1007,0.000296025,Prompt specifies domain, four explicit tasks and end goal with scale context; response covers all stages comprehensively with domain-specific examples, FERPA/GDPR compliance, leakage prevention and pipeline encapsulation; no hallucinations; one of the strongest responses in the dataset
+57,Explain what artificial intelligence is.,Gemini Flash 3.6,"Artificial Intelligence (AI) is a field of computer science focused on creating systems that can perform tasks requiring human intelligence. How it works: Data Collection, Pattern Recognition via algorithms, Decision Making. Key Subfields: Machine Learning (learn from data), Deep Learning (neural networks), NLP (understand human language), Computer Vision (analyze visual data). Categories: Narrow AI (only type that exists today, single task), Generative AI (creates new content), AGI (hypothetical human-level AI). Everyday examples: Netflix recommendations, Siri/Alexa, Google Maps, fraud detection, medical imaging. Challenges: bias, job displacement, misinformation, privacy.",Average,4,4,4,5,7,918,925,0.000275925,Broad and vague prompt with no depth level, audience, or specific angle; model produced a comprehensive overview by assumption covering all major AI aspects; output is accurate and well-structured but entirely model-driven; no hallucinations
+58,What is machine learning?,Gemini Flash 3.6,"Machine Learning (ML) is a branch of AI that allows computers to learn from data without being explicitly programmed. Traditional Programming: Data + Rules = Answers. ML: Data + Answers = Rules. Three types: Supervised Learning (labeled data, learns with a teacher), Unsupervised Learning (unlabeled data, finds hidden patterns), Reinforcement Learning (trial and error with rewards/penalties). Everyday examples: Netflix recommendations, Siri/Alexa, FaceID, fraud detection, ChatGPT. ML exploded due to Big Data, increased computing power (GPUs), and advanced algorithms.",Average,4,4,4,5,6,693,699,0.000208350,Broad and vague prompt with no depth level or audience specified; model produced a comprehensive overview by assumption; output covers all key ML concepts accurately but is entirely model-driven due to lack of prompt specificity
+59,Explain the difference between AI and ML.,Gemini Flash 3.6,"AI is the broad umbrella concept; ML is a specific technique used to achieve AI. AI: broad field creating systems capable of human-like tasks, can use hardcoded rules or data learning. Example: 1990s chess game using if/then rules. ML: subset of AI where systems train on data and learn patterns automatically without explicit programming. Example: spam filters learning from millions of labeled emails. Comparison: Scope - AI is broad, ML is subset; Data - AI can work without data, ML requires large data; Logic - AI uses if/then or data-driven, ML is purely data-driven; Adaptability - traditional AI is static, ML constantly improves. Analogy: AI is vehicle (broad concept), ML is electric car (specific type). Deep Learning is a further subset of ML using neural networks.",Average,4,4,4,5,9,757,766,0.000227775,Prompt asks for a comparison between two specific concepts but lacks depth level, audience, and format preference; model assumed general audience and produced a comprehensive nested concept explanation; output is accurate and well-structured but model-driven
+60,What is a neural network?,Gemini Flash 3.6,"A neural network is a computer system designed to learn and process information inspired by the human brain. It uses software nodes (artificial neurons) arranged in layers: Input Layer (receives raw data), Hidden Layers (extract features and find patterns - multiple hidden layers = Deep Neural Network), Output Layer (final prediction). Example: cat recognition - input layer takes image pixels, hidden layers detect edges then shapes then features, output layer predicts cat probability. Learning process: Guessing, Calculating Error, Adjusting via Backpropagation (tweaking connection weights), Repetition. Key types: CNNs (computer vision), RNNs and Transformers (language and sequences). Neural networks handle unstructured data, improve with more data, and automate complex pattern recognition.",Average,4,4,4,5,7,776,783,0.000233325,Broad and vague prompt with no depth level, audience, or specific application context; model produced a comprehensive explanation by assumption covering all key neural network concepts; output is accurate but entirely model-driven
+61,Explain supervised learning with an example.,Gemini Flash 3.6,"Supervised learning trains on labeled data (inputs paired with correct outputs) like learning with a teacher. Example - House Price Prediction: collect 1000 labeled houses (size, bedrooms, location score mapped to actual price); train model to find patterns; predict price for new house (1800 sqft, 3 bed, location 7/10 = $340000). Two main types: Regression (predict continuous number e.g. house prices, temperature) and Classification (predict category e.g. spam/not spam, malignant/benign, cat/dog).",Good,5,5,5,5,8,767,775,0.000230700,Prompt specifies the concept and explicitly requests an example giving clear direction; response uses an effective house price analogy with a labeled dataset table and covers both regression and classification types accurately
+62,What is overfitting in machine learning?,Gemini Flash 3.6,"Overfitting occurs when a model learns training data too well - memorizing noise and fluctuations instead of the underlying pattern, performing well on training data but poorly on new data. Analogy: student memorizing practice answers vs understanding concepts. Causes: model too complex, dataset too small, too much noise, training too long. Overfitting vs Underfitting: Underfitting - model too simple, high error on both train and test; Overfitting - low train error but high test error; Good Fit - low error on both. Detection: split into train/test sets and compare errors. Prevention: get more data, early stopping, simplify model, regularization (L1/L2), dropout, cross-validation.",Good,5,5,5,5,8,840,848,0.000252600,Clear and specific prompt naming the exact concept and domain; response covers causes, detection, prevention and comparison with underfitting using an effective analogy; accurate and well-structured
+63,Explain the concept of natural language processing.,Gemini Flash 3.6,"Natural Language Processing (NLP) is a branch of AI that gives computers the ability to understand, interpret, generate, and respond to human language. Problems NLP solves: Ambiguity (bank = financial or river), Sarcasm and Tone, Idioms (kick the bucket), Slang and Evolution. Core tasks: Tokenization (split sentence into tokens), Stop Word Removal, Stemming/Lemmatization (reduce to root form), Part-of-Speech Tagging, Named Entity Recognition (identify people/places/companies), Sentiment Analysis. Two pillars: NLU (understand input meaning) and NLG (generate human-like response). Real-world examples: Google Search autocomplete, spam filters, Siri/Alexa, Google Translate, ChatGPT. Modern NLP uses Transformers and deep learning instead of rigid grammatical rules.",Average,4,4,4,5,9,982,991,0.000295275,Prompt specifies the concept but lacks depth level, audience, and specific NLP application context; model produced a comprehensive overview by assumption; output is accurate and well-structured but entirely model-driven
+64,What is deep learning?,Gemini Flash 3.6,"Deep learning is a subfield of AI and ML that teaches computers to process data inspired by the human brain using multi-layered neural networks. AI hierarchy: AI (broad) > ML (subset) > DL (specialized subset). How it works: Input Layer (raw data), Hidden Layers (learn increasingly complex features - edges, shapes, features, objects), Output Layer (final prediction). Learning: model makes guesses, calculates error, adjusts weights via backpropagation, repeats millions of times. DL vs ML: DL auto-extracts features vs ML requires manual feature engineering; DL needs massive data vs ML works with smaller datasets; DL needs GPUs vs ML runs on CPUs; DL excels at unstructured data vs ML at structured data. Applications: computer vision, NLP/LLMs, generative AI, recommendation systems, healthcare. Popular due to Big Data, GPU computing, and Transformer architecture. Limitations: black box problem, high resource cost, data bias.",Average,4,4,4,5,6,1151,1157,0.000345750,Broad and vague prompt with no depth level, audience, or specific application context; model produced a comprehensive overview by assumption covering all key deep learning concepts; output is accurate but entirely model-driven
+65,Explain the difference between classification and regression.,Gemini Flash 3.6,"Classification predicts a discrete category/label; Regression predicts a continuous numerical value. Classification: Binary (spam/not spam, positive/negative) or Multi-class (digits 0-9, cat/dog/bird). Algorithms: Logistic Regression, Decision Trees, SVM, Naive Bayes, KNN. Metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix. Regression: predicts exact numbers (house price $340500, temperature 72.4F, subscription days 412.5). Algorithms: Linear Regression, Ridge/Lasso, Decision Tree Regressor, XGBoost. Metrics: MAE, MSE, RMSE, R2 Score. Problems can be converted: regression (exact income $54320) vs classification (income bracket Low/Middle/High). Analogy: predicting letter grade (A/B/C) = classification; predicting exact percentage (88.4%) = regression.",Good,5,5,5,5,9,883,892,0.000265575,Prompt specifies two exact ML concepts to compare with a clear unambiguous task; response accurately covers output types, algorithms, metrics and conversion between the two with a helpful analogy
+66,What is a dataset?,Gemini Flash 3.6,"A dataset is a collection of related information gathered and organized for analysis or processing. Anatomy: Rows (observations/records), Columns (variables/features), Cells (values). Example - Real Estate dataset: House ID, Neighborhood, Square Feet, Price, Sold columns with house records as rows. Types: Structured (CSV, SQL, Excel), Unstructured (images, audio, video, raw text), Semi-Structured (JSON, XML). Use cases: AI/ML (training models e.g. driving video for self-driving cars), Business Intelligence (customer purchase history for trends), Scientific Research (clinical trial data for medicine effectiveness), Government (census data for infrastructure planning).",Average,4,4,4,5,6,619,625,0.000186150,Broad and vague prompt with no domain context, depth level, or specific use case; model produced a general overview by assumption; output is accurate and well-structured but entirely model-driven
+67,1. What is it?,Gemini Flash 3.6,"Could you please specify what ""it"" refers to? 
+
+Please provide more context, a description, or the topic you are asking about, and I'll be happy to help!",Bad,1,1,1,5,3,20,23,6.225e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+68,2. Explain everything about computers.,Gemini Flash 3.6,"To explain ""everything"" about computers, we need to break it down into its fundamental building blocks: **what a computer is, how it works at the lowest level, its physical parts (hardware), its instructions (software), how they communicate, and where technology is going in the future.**
+
+---
+
+### 1. What is a Computer?
+At its absolute simplest, a computer is an **electronic device that manipulates information (data)**. It takes raw data, processes it according to rules you give it, outputs the result, and stores it for later use.
+
+Every computer operates on a four-part cycle called the **IPOS Model**:
+1. **Input:** Receiving data (e.g., clicking a mouse, typing on a keyboard, receiving a Wi-Fi signal).
+2. **Processing:** Manipulating that data using mathematical and logical operations.
+3. **Output:** Displaying the result (e.g., showing a pixel on a screen, playing a sound, printing a document).
+4. **Storage:** Saving the data for later (e.g., saving a file to a hard drive).
+
+---
+
+### 2. How Computers ""Think"": Binary
+Computers do not understand English, Spanish, or math the way humans do. They are ultimately networks of billions of microscopic electric switches. 
+
+* An electric switch can only be in two states: **ON** (electricity flowing) or **OFF** (no electricity).
+* We represent **ON** as **1** and **OFF** as **0**. 
+* This system of 1s and 0s is called **Binary Code**.
+
+Every single thing on your computer—a video, a text message, a video game, an operating system—is broken down into millions or billions of 1s and 0s.
+* **Bit:** A single `0` or `1`. (The smallest unit of data).
+* **Byte:** A group of 8 bits (e.g., `01000001` represents the letter ""A"").
+* **Kilobyte (KB):** ~1,000 bytes.
+* **Megabyte (MB):** ~1 million bytes.
+* **Gigabyte (GB):** ~1 billion bytes.
+* **Terabyte (TB):** ~1 trillion bytes.
+
+---
+
+### 3. Hardware: The Physical Anatomy
+Hardware refers to the physical components of a computer that you can touch.
+
+* **CPU (Central Processing Unit):** The ""brain."" It reads instructions from programs and executes them billions of times per second (measured in Gigahertz, or GHz). Inside the CPU are billions of microscopic transistors (the switches mentioned above).
+* **RAM (Random Access Memory):** The ""short-term memory."" It holds the data the CPU needs *right now*. It is extremely fast, but **volatile**—meaning when you turn off the computer, everything in RAM is erased.
+* **Storage (HDD or SSD):** The ""long-term memory."" This holds your files, apps, and operating system even when the computer is off (**non-volatile**).
+    * *HDD (Hard Disk Drive):* Older, uses magnetic spinning platters (slower).
+    * *SSD (Solid State Drive):* Modern, uses flash memory microchips (much faster, no moving parts).
+* **Motherboard:** The ""nervous system."" A large circuit board that connects the CPU, RAM, storage, and all other components so they can talk to each other.
+* **GPU (Graphics Processing Unit):** A specialized processor designed specifically for handling heavy math, 3D graphics, video rendering, and Machine Learning/AI tasks.
+* **Power Supply Unit (PSU):** Converts electrical power from your wall outlet into the specific DC voltages required by internal components.
+* **Peripherals:** Devices connected externally for input/output (monitors, keyboards, mice, speakers, webcams).
+
+---
+
+### 4. Software: The Digital Instructions
+Hardware is just an expensive pile of metal and silicon without **software**. Software tells the hardware what to do.
+
+Software operates in layers:
+
+1. **Firmware / BIOS:** Low-level code stored directly on microchips. When you press the power button, the BIOS wakes up the hardware and prepares it for the main operating system.
+2. **Operating System (OS):** The master software program that manages hardware resources and provides a user interface. 
+    * *Examples:* Windows, macOS, Linux, iOS, Android.
+    * The OS acts as a translator between human commands, applications, and hardware.
+3. **Applications (Apps):** Programs written to perform specific tasks for the user (e.g., Web browsers like Chrome, Photoshop, Spotify, Video Games).
+
+#### How Software is Made (Programming):
+Humans write software using high-level **Programming Languages** (like Python, JavaScript, C++, or Java) which use human-readable words and logic. A special program called a **Compiler** or **Interpreter** translates that human language down into **Machine Code** (binary 1s and 0s) so the CPU can run it.
+
+---
+
+### 5. Networks and the Internet
+A standalone computer is useful, but connecting computers together creates a **Network**.
+
+* **The Internet:** A global network of millions of interconnected computers, servers, and routers.
+* **Servers and Clients:** 
+    * A **Client** is your local device (laptop, phone) requesting information.
+    * A **Server** is a high-powered computer stored in a data center that ""serves"" data (web pages, videos) upon request.
+* **IP Addresses:** Every computer on a network gets a unique digital address (like a home mailing address) so data knows where to go.
+* **Packets:** When you send data over the internet (like downloading a photo), it is sliced into millions of tiny chunks called ""packets."" These travel through underwater fiber-optic cables, wireless towers, and routers before reassembling perfectly on your device.
+
+---
+
+### 6. Different Types of Computers
+Computers come in many forms, ranging from microscopic to room-sized:
+* **Microcontrollers:** Tiny computers inside everyday appliances (microwaves, washing machines, cars).
+* **Smartphones & Wearables:** Highly optimized, mobile, low-power personal computers.
+* **Personal Computers (PCs):** Laptops and desktops designed for individual use.
+* **Servers & Data Centers:** High-performance computers designed to run 24/7 processing web traffic and cloud services.
+* **Supercomputers:** Massive systems that link thousands of CPUs and GPUs together to run complex simulations (e.g., weather forecasting, nuclear modeling, drug discovery).
+
+---
+
+### 7. A Brief History of Computing
+* **The Mechanical Era (Pre-20th Century):** Devices like the abacus, and Charles Babbage's mechanical ""Analytical Engine"" (the conceptual blueprint for modern computers).
+* **Vacuum Tubes (1940s):** Early electronic computers (like the ENIAC) used glass vacuum tubes to act as switches. They were room-sized, generated huge heat, and frequently broke down.
+* **The Transistor Revolution (1950s–1960s):** The invention of the silicon transistor replaced vacuum tubes, making computers vastly smaller, cheaper, and more reliable.
+* **Integrated Circuits & Microprocessors (1970s–Present):** Engineers learned to etch millions (now billions) of transistors onto a single tiny silicon chip. This birthed the Personal Computer (PC) revolution in the late 70s/80s led by companies like Apple, IBM, and Microsoft.
+* **Moore's Law:** An observation made by Intel co-founder Gordon Moore that the number of transistors on a microchip doubles roughly every two years, leading to exponential growth in computing power.
+
+---
+
+### 8. The Future of Computing
+As traditional silicon chips reach atomic limits (we can't make transistors much smaller without electrons bleeding through them), computing is evolving into new paradigms:
+
+1. **Artificial Intelligence (AI) & Machine Learning:** Software that isn't explicitly programmed line-by-line, but learns patterns by processing massive amounts of data.
+2. **Quantum Computing:** Instead of bits (0 or 1), quantum computers use **qubits** that can exist as both 0 and 1 simultaneously (superposition). This allows them to solve specific ultra-complex scientific calculations in seconds that would take traditional supercomputers thousands of years.
+3. **Edge & Spatial Computing:** Shifting computation into ambient environments—augmented reality (AR) glasses, autonomous vehicles, and smart cities.",Bad,1,1,1,5,4,879,883,0.000264,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+69,3. Make it better.,Gemini Flash 3.6,"It looks like you didn't include the text or context for item **#3**! 
+
+Please paste or describe what you'd like me to improve, and let me know your goal—for example:
+* **Writing/Content:** More professional, concise, persuasive, engaging, or grammatically correct.
+* **Code:** More efficient, clean, readable, or bug-free.
+* **Formatting:** Bullet points, structured sections, or better layout.
+
+Once you share it, I'll make it better right away!",Bad,1,1,1,5,3,50,53,1.5225e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+70,4. Tell me the answer but don't explain.,Gemini Flash 3.6,Please provide question 4.,Bad,1,1,1,5,6,3,9,1.35e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+71,5. Write something good.,Gemini Flash 3.6,"Here is something written just for you:
+
+***
+
+Consider how much quiet beauty exists right now, entirely unnoticed.
+
+Somewhere at this exact second, a dog is leaning its full body weight against someone it loves. A kettle is coming to a boil in a quiet kitchen, preparing a warm drink for a tired friend. A tiny green seedling is splitting through dark, heavy earth, quietly insisting on reaching the sun. Someone just finished a book that changed the way they see everything, and they are holding it against their chest, taking a long, slow breath.
+
+We hear so much about the breaks and the cracks in the world, but we rarely talk about the glue. 
+
+The glue is ordinary kindness. It is the stranger holding an elevator door. It is the way children laugh with their whole bodies, completely unburdened by yesterday or tomorrow. It is the fact that despite how difficult life can get, human beings still insist on writing songs, planting gardens, making soup for each other, and looking up at the stars.
+
+If you are tired today, or if the world feels a little too loud, remember this: goodness doesn't always make the news. Most of the time, it happens in the quiet, unrecorded moments between people just trying their best. 
+
+You don't have to accomplish something grand today to deserve your place here. Just breathing, noticing the light, and being gentle with yourself—that is enough. That is good.",Bad,1,1,1,5,3,182,185,5.4825e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+72,6. What should I do?,Gemini Flash 3.6,"It looks like you're asking about item or step **#6**, but I don't have the context or the rest of the details! 
+
+To help you figure out what to do, please provide a bit more information:
+
+1. **What is question or step #6 asking?** (Feel free to paste the text, image details, or context).
+2. **What topic/subject is this?** (e.g., math, programming, a workplace decision, a technical guide, etc.)
+
+Once you share the details, I'll be happy to give you a clear, step-by-step answer!",Bad,1,1,1,5,4,63,67,1.92e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+73,7. Explain AI in detail but keep it to one word.,Gemini Flash 3.6,**Prediction**,Bad,1,1,1,5,8,1,9,9e-07,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+74,8. Give me all the information about science.,Gemini Flash 3.6,"While it is impossible to fit all of human scientific knowledge into a single response, we can break down **everything about the nature, structure, history, methodology, and future of science** into a ultimate comprehensive guide.
+
+---
+
+# PART 1: What is Science?
+
+**Science** (from the Latin *scientia*, meaning ""knowledge"") is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.
+
+### Core Philosophy of Science
+1. **Empiricism:** Knowledge must be based on observation and experimental evidence, not pure intuition or dogma.
+2. **Falsifiability:** A scientific claim must be capable of being proven wrong. If it cannot be tested or disproved, it is not science.
+3. **Self-Correction:** Science is not a body of unchangeable facts. When new evidence contradicts old theories, the theories are updated or discarded.
+
+---
+
+# PART 2: The Scientific Method
+
+The scientific method is the standardized process scientists use to investigate the universe:
+
+1. **Observation:** Noticing a phenomenon in the natural world.
+2. **Question:** Asking why or how this phenomenon occurs.
+3. **Hypothesis:** Formulating a testable, educated guess to answer the question.
+4. **Experimentation:** Designing and conducting tests to gather data under controlled conditions.
+5. **Data Analysis:** Using statistics and logic to interpret the results.
+6. **Conclusion:** Determining whether the data supports or refutes the hypothesis.
+7. **Peer Review & Replication:** Sharing results with other scientists who scrutinize the work and attempt to replicate the experiment to verify results.
+
+### Key Vocabulary: Hypothesis vs. Theory vs. Law
+* **Hypothesis:** An untested proposed explanation for a narrow phenomenon.
+* **Scientific Law:** A statement that describes *what* happens in nature under specific conditions (often expressed mathematically, e.g., Newton’s Law of Gravity). It does *not* explain *why*.
+* **Scientific Theory:** A broad, well-substantiated explanation of *why* and *how* natural phenomena occur, supported by a massive body of evidence (e.g., Theory of General Relativity, Theory of Evolution). *A theory never ""becomes"" a law; theories explain laws.*
+
+---
+
+# PART 3: The Branches of Science
+
+Science is divided into three major categories, along with applied fields:
+
+```
+                          SCIENCE
+                             │
+     ┌───────────────────────┼───────────────────────┐
+     ▼                       ▼                       ▼
+Natural Sciences      Social Sciences         Formal Sciences
+(Physical & Life)    (Human Behavior)         (Logic & Math)
+     │                       │                       │
+     └───────────────────────┼───────────────────────┘
+                             ▼
+                      Applied Sciences
+                  (Engineering & Medicine)
+```
+
+### 1. Natural Sciences
+The study of the physical world and nature.
+* **Physical Sciences:**
+  * **Physics:** The study of matter, energy, space, time, and fundamental forces.
+  * **Chemistry:** The study of substances, atoms, molecules, and chemical reactions.
+  * **Astronomy:** The study of celestial objects, galaxies, and the universe.
+  * **Earth Sciences:** Geology (rocks/Earth structure), Meteorology (weather), Oceanography.
+* **Life Sciences (Biology):**
+  * **Zoology:** Study of animals.
+  * **Botany:** Study of plants.
+  * **Genetics:** Study of genes and heredity.
+  * **Ecology:** Study of ecosystems and organism interactions.
+  * **Neuroscience:** Study of the brain and nervous system.
+
+### 2. Social Sciences
+The study of human behavior, relationships, and societies.
+* **Psychology:** Individual mind and behavior.
+* **Sociology:** Group behavior and social structures.
+* **Economics:** Production, distribution, and consumption of goods/services.
+* **Anthropology:** Human origins, culture, and development.
+
+### 3. Formal Sciences
+The study of abstract structures, rules, and formal systems. (Unlike Natural Sciences, these do not rely on empirical observation of the physical world, but are essential tools for all sciences).
+* **Mathematics**
+* **Logic**
+* **Statistics**
+* **Computer Science / Information Theory**
+
+### 4. Applied Sciences
+Using existing scientific knowledge to develop practical applications, technology, or inventions.
+* **Medicine & Health Sciences**
+* **Engineering** (Civil, Mechanical, Electrical, Chemical)
+* **Biotechnology**
+* **Agricultural Science**
+
+---
+
+# PART 4: A Brief History of Science
+
+* **Ancient Era (Pre-500 CE):**
+  * Early observations of stars, agriculture, and medicine in Mesopotamia, Egypt, India, and China.
+  * **Ancient Greece:** Philosophers like Aristotle, Archimedes, and Democritus laid early foundations for natural philosophy, geometry, and atomic theory.
+
+* **Islamic Golden Age (8th–14th Century):**
+  * Scholars like **Ibn al-Haytham (Alhazen)** developed the foundations of modern optics and the early scientific method.
+  * Major advancements in algebra, medicine (Ibn Sina/Avicenna), and astronomy.
+
+* **The Scientific Revolution (16th–17th Century):**
+  * **Nicolaus Copernicus:** Proposed the heliocentric (sun-centered) model of the solar system.
+  * **Galileo Galilei:** Used the telescope to confirm heliocentrism; championed experimentation over dogma.
+  * **Francis Bacon:** Formulated the modern scientific method.
+  * **Isaac Newton:** Formulated laws of motion and universal gravitation, inventing calculus in the process.
+
+* **19th Century (Industrial & Biological Revolutions):**
+  * **Charles Darwin:** Proposed evolution by natural selection.
+  * **James Clerk Maxwell:** Unified electricity, magnetism, and light into classical electromagnetism.
+  * **Dmitri Mendeleev:** Created the Periodic Table of Elements.
+
+* **20th Century (Modern Physics & Genetics):**
+  * **Albert Einstein:** Developed Special and General Relativity, revolutionizing our understanding of space, time, and gravity.
+  * **Quantum Mechanics:** Planck, Bohr, Heisenberg, and Schrödinger revealed that matter acts unpredictably at atomic scales.
+  * **DNA Structure:** Watson, Crick, and Rosalind Franklin discovered the double-helix structure of DNA, opening the door to modern genetics.
+
+---
+
+# PART 5: Major Scientific Milestones / Great Discoveries
+
+1. **Heliocentrism:** The Earth revolves around the Sun.
+2. **Newtonian Mechanics:** Physical objects obey deterministic mathematical rules.
+3. **Germ Theory of Disease:** Microorganisms cause infectious diseases (Pasteur, Koch).
+4. **Theory of Evolution:** Life diversifies over time via natural selection.
+5. **Periodic Table:** Elements possess predictable atomic structures and behaviors.
+6. **Relativity:** Space and time are interconnected ($E=mc^2$), and mass warps spacetime to create gravity.
+7. **Quantum Mechanics:** Reality at subatomic levels is probabilistic, not deterministic.
+8. **Plate Tectonics:** Earth's crust is made of moving plates that cause earthquakes, volcanoes, and continental drift.
+9. **The Big Bang Theory:** The universe expanded from an extremely hot, dense point roughly 13.8 billion years ago.
+10. **The Genetic Code:** DNA carries the instructions for building all living organisms.
+
+---
+
+# PART 6: The Modern Frontiers of Science
+
+What are scientists working on today?
+
+* **Quantum Computing:** Building computers using quantum mechanics to process complex data exponentially faster than modern supercomputers.
+* **CRISPR & Gene Editing:** Modifying human, plant, and animal DNA to cure hereditary diseases and create resilient crops.
+* **Artificial Intelligence & Machine Learning:** Creating algorithms that learn, solve problems, and analyze scientific data faster than humans.
+* **Astrophysics & Dark Matter:** Investigating the 95% of the universe that is invisible to us (Dark Matter and Dark Energy).
+* **Nuclear Fusion Energy:** Attempting to recreate the power of the Sun on Earth for near-limitless, clean energy.
+* **Neuroscience & Consciousness:** Mapping the human brain to understand how thoughts, memories, and self-awareness emerge.
+* **Climate Science:** Developing methods to capture carbon, forecast climate change impacts, and transition to sustainable energy ecosystems.
+
+---
+
+# Summary: Why Science Matters
+
+Science is not about absolute truth; it is the **best system humans have ever created for discovering how reality works**. It drives human longevity (medicine), global communication (internet, physics), transportation (engineering), and our deep understanding of our place in the cosmic timeline.",Bad,1,1,1,5,6,856,862,0.00025725,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+75,9. Fix my code.,Gemini Flash 3.6,"Please provide the code you would like me to fix! 
+
+To help me give you the best solution, also let me know:
+1. **What the code is supposed to do** (expected behavior).
+2. **What is currently happening** (any error messages or incorrect outputs).
+3. **The programming language** (if it's not obvious from the snippet).",Bad,1,1,1,5,3,40,43,1.2225e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+76,10. What happened yesterday?,Gemini Flash 3.6,"It looks like this question might be part of a quiz, worksheet, or reading passage! 
+
+Since I don't have the text or context you are referring to, could you please share the story or passage? Once you provide it, I'll be happy to help you answer what happened yesterday!",Bad,1,1,1,5,3,37,40,1.1325e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+77,11. Make a picture of the thing I told you about before.,Gemini Flash 3.6,"It looks like this is a new conversation, so I don't have memory of what we discussed before! 
+
+Could you please describe the thing or idea you'd like a picture of? Once you tell me the details, I'll be happy to create it for you!",Bad,1,1,1,5,9,34,43,1.0875e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+78,12. Tell me which one is best.,Gemini Flash 3.6,"It looks like you didn't include the options or the list you're referring to! 
+
+Could you please share:
+1. **The options** you are comparing.
+2. **What you plan to use it for** (or your budget/preferences).
+
+Once you provide the details, I'd be happy to tell you which one is best and why!",Bad,1,1,1,5,5,39,44,1.2075e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+79,13. Explain this.,Gemini Flash 3.6,"It looks like you didn't attach or paste the text, image, or code for **number 13**! 
+
+Please paste the content or provide more context, and I will gladly explain it for you.",Bad,1,1,1,5,2,24,26,7.35e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+80,"14. Give me 10 examples, but don't give any examples.",Gemini Flash 3.6,"Here are 10 examples of nothing:
+
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10.",Bad,1,1,1,5,8,12,20,4.2e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+81,15. Solve this problem.,Gemini Flash 3.6,"It looks like the details or image for problem #15 were not included in your message. 
+
+Please provide the text, code, or an image of problem #15, and I will be happy to solve it for you!",Bad,1,1,1,5,3,28,31,8.625e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+82,16. Write a program that does everything.,Gemini Flash 3.6,"Here are three ways to solve this prompt, ranging from **literal**, to **playful**, to **theoretically correct**.
+
+---
+
+### 1. The Literal Solution (Python)
+If a program must output ""everything"", this prints every printable ASCII character in existence:
+
+```python
+print("""".join(chr(i) for i in range(32, 127)))
+```
+
+---
+
+### 2. The Interactive ""Omnipresent"" Program
+This Python program simulates doing everything—math, network checks, universe creation, and providing an open REPL interface so it can execute *any* arbitrary code you give it.
+
+```python
+import math
+import random
+import sys
+import time
+
+
+class EverythingEngine:
+
+    def __init__(self):
+        self.universe_entropy = random.getrandbits(64)
+
+    def calculate_meaning(self):
+        return 42
+
+    def print_all_characters(self):
+        # Outputs every standard printable character
+        return """".join(chr(i) for i in range(32, 127))
+
+    def run(self):
+        print(""========================================"")
+        print(""       INITIALIZING EVERYTHING...       "")
+        print(""========================================"")
+        time.sleep(0.5)
+
+        print(f""[+] Math Core: Pi = {math.pi}"")
+        print(f""[+] Philosophical Core: Meaning of Life = {self.calculate_meaning()}"")
+        print(f""[+] Quantum Core: Entropy State = {hex(self.universe_entropy)}"")
+        print(f""[+] Text Core: Printable Everything = {self.print_all_characters()}"")
+
+        print(""\n[+] Activating Infinite Execution Shell..."")
+        print(""Type any Python code to perform any remaining task. (Type 'exit' to stop)"")
+
+        while True:
+            try:
+                user_input = input(""\nEverything> "")
+                if user_input.lower() in [""exit"", ""quit""]:
+                    print(""Shutting down Everything. Goodbye."")
+                    break
+                # Exec allows the user to run *any* code, effectively doing ""everything""
+                exec(user_input)
+            except Exception as e:
+                print(f""Error executing part of everything: {e}"")
+
+
+if __name__ == ""__main__"":
+    app = EverythingEngine()
+    app.run()
+```
+
+---
+
+### 3. The Theoretical Solution (Computer Science)
+
+In theoretical computer science, a machine that can ""do everything"" (that is compute-able) is called a **Universal Turing Machine (UTM)**. A UTM is an interpreter that takes a description of any other machine $M$ and input $w$, and simulates $M$ on $w$.
+
+Here is a minimal **Universal Interpreter / Turing Machine** in Python:
+
+```python
+def universal_evaluator(program_code: str):
+    """"""
+    A Universal Turing Machine concept:
+    Takes any valid instruction set and executes it.
+    """"""
+    return exec(program_code)
+
+# Example: Handing the universal evaluator a task
+universal_evaluator('print(""Doing something specific within everything!"")')
+```
+
+> **Note:** According to **Rice's Theorem** and the **Halting Problem** proved by Alan Turing in 1936, it is mathematically impossible to write a single program that can predict or solve *literally* every problem. However, an interpreter (`eval`/`exec`) is as close as we can get!",Bad,1,1,1,5,5,268,273,8.0775e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+83,17. What is the correct answer: yes or no?,Gemini Flash 3.6,"To tell you whether the answer is **yes** or **no**, I need the text of question 17! 
+
+Please provide the question, and I'll be happy to help you answer it.",Bad,1,1,1,5,7,22,29,7.125e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+84,18. Explain quantum physics so that a five-year-old PhD student can understand it.,Gemini Flash 3.6,"Ah, welcome! Put down your juice box, grab your favorite security blanket, and let’s talk about quantum mechanics. 
+
+Since you’re five, we’re going to use simple pictures. But since you’re also writing your dissertation, we aren't going to skip the linear algebra. 
+
+Here is how the universe works when you zoom in really, really close.
+
+---
+
+### 1. Lego Bricks are ""Quantized"" (Energy Levels)
+In the big world—the world of tricycles and classical physics—energy is like a slide. You can sit at *any* height on a slide. 
+
+But down in the quantum world, energy isn't a slide; it's a staircase made of Lego blocks! You can stand on step $1$, or step $2$, but you **cannot** stand in the air between step $1$ and step $2$. 
+
+When an electron wants to change energy, it doesn't move through the space in between. It takes a jump—a **quantum leap**—by absorbing or emitting a discrete packet of light called a photon, with energy $E = h\nu$. 
+
+### 2. The Magic Spinning Toy (Superposition & Hilbert Space)
+Imagine you have a coin. 
+* Classically, it's either Heads ($|H\rangle$) or Tails ($|T\rangle$).
+* But if you spin it on the kitchen table, while it’s spinning, it’s a blur of *both* Heads and Tails at the same time.
+
+In quantum mechanics, everything is a spinning coin! We describe a particle's state using a vector, $|\psi\rangle$, in a infinite-dimensional complex vector space called a **Hilbert Space**. 
+
+Until we look at it, a particle doesn't have a single location; it exists in a **superposition** of all possible locations simultaneously:
+$$|\psi\rangle = \alpha | \text{Under the Bed} \rangle + \beta | \text{In the Toy Box} \rangle$$
+
+Here, $\alpha$ and $\beta$ are complex probability amplitudes. (Yes, complex numbers! Just like your imaginary friend, but with $\sqrt{-1}$.)
+
+### 3. Playing Peek-a-Boo (The Measurement Problem & Born Rule)
+What happens when you play Peek-a-boo? You open your eyes!
+
+In quantum mechanics, opening your eyes is called making an **observation** or **measurement**. You apply a Hermitian operator $\hat{A}$ to the state vector $|\psi\rangle$.
+
+When you look, the magic spin stops instantly. The wavepacket undergoes a non-unitary collapse into a single **eigenstate**. 
+
+How do you know where the toy will end up? You use the **Born Rule**! You square the absolute value of the amplitude: $P = |\alpha|^2$. That gives you the probability of finding your teddy bear in the toy box versus under the bed. 
+
+Before you looked, the spatial distribution evolved smoothly and deterministically according to the **Schrödinger Equation**:
+$$i\hbar \frac{\partial}{\partial t}|\psi(t)\rangle = \hat{H}|\psi(t)\rangle$$
+*(Which is basically just the quantum version of pushing a toy car, where $\hat{H}$ is the Hamiltonian operator representing total energy!)*
+
+### 4. The Magic Best-Friend Socks (Quantum Entanglement)
+Imagine you have a pair of magical socks. You put one sock in your cubby at preschool, and you put the other sock in a spaceship heading to Mars. 
+
+These socks are in an **entangled tensor product state**:
+$$|\psi_{AB}\rangle = \frac{1}{\sqrt{2}} \left( |\text{Left}\rangle_A |\text{Right}\rangle_B - |\text{Right}\rangle_A |\text{Left}\rangle_B \right)$$
+
+Neither sock has decided if it is a Left sock or a Right sock yet! They are both in a superposition.
+
+However, the exact millisecond you open your cubby on Earth and measure your sock to be a **Left Sock**, the sock on Mars instantly collapses into a **Right Sock**! 
+
+Albert Einstein called this ""spooky action at a distance"" because it made him cranky. But John Bell proved with his famous inequality theorem that there are no ""hidden instruction notes"" inside the socks. Local realism is dead, sweetie! The universe is fundamentally non-local!
+
+### 5. Running Through Walls (Quantum Tunneling)
+If you throw a bouncy ball at a brick wall, it bounces back. It doesn't have enough kinetic energy $E$ to overcome the potential barrier $V_0$ of the wall.
+
+But because a quantum particle is actually a wavepacket described by a spatial wavefunction $\psi(x)$, its probability density does not instantly drop to zero inside the wall. Instead, it decays exponentially inside the barrier!
+
+If the wall is thin enough, the wavefunction $\psi(x)$ is still slightly larger than zero on the *other side* of the wall! 
+
+This means there is a non-zero probability amplitude $T \approx e^{-2KL}$ that your toy will magically pass *straight through the solid wall* without breaking it. This is called **Quantum Tunneling**. (It’s how the Sun shines, and how flash drives store your favorite cartoon!)
+
+---
+
+### Summary for Nap Time:
+1. Everything is made of tiny packets (Quantization).
+2. Things can be in two places at once until you peek (Superposition & Measurement).
+3. Two objects can share a secret connection across the galaxy (Entanglement).
+4. Waves can ghost through solid objects (Tunneling).
+
+Now, if you don't take your nap, you will exist in a superposition of *being awake* and *having a tantrum*, which will immediately collapse your bedtime privileges. 
+
+Do you have any questions before peer review?",Bad,1,1,1,5,10,608,618,0.00018315,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+85,19. Make this shorter and longer at the same time.,Gemini Flash 3.6,"Here are three ways to fulfill this, depending on what you mean:
+
+---
+
+### 1. Rewriting your prompt
+* **Shorter:** ""Condense and expand.""
+* **Longer:** ""Please take the provided text and generate two distinct iterations: one that drastically reduces the word count for maximum conciseness, and another that comprehensively expands upon the core ideas with deeper context, nuance, and detail.""
+
+---
+
+### 2. A single sentence that is both
+> *""A moment passed, changing everything forever.""*
+*(Shorter in word count, longer in time and impact.)*
+
+---
+
+### 3. Did you forget to paste a text?
+If you meant to attach a specific paragraph or document, paste it in a reply! I can provide:
+* **The Short Version:** A punchy, bulleted summary (TL;DR).
+* **The Long Version:** A detailed, fully expanded breakdown.",Bad,1,1,1,5,8,98,106,3e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+86,20. Give me today's news from the future.,Gemini Flash 3.6,"Here is your evening edition of **The Global Network Broadcast**, brought to you directly from **October 24, 2142**.
+
+***
+
+### 📰 THE GLOBAL NETWORK BROADCAST
+**Date:** October 24, 2142  
+**Atmospheric Status:** Stable (Global Temperature Index: +1.2°C target maintained)
+
+---
+
+### 🔴 TOP STORIES
+
+**1. Mars Colony ‘Olympus One’ Votes to Formalize Independent Constitution**  
+Following three decades of economic self-sufficiency, the 400,000 residents of Olympus Prime voted overwhelmingly today to sever regulatory ties with Earth’s United Nations. The historic vote passed with an 84% majority. Earth's Orbital Trade Commission has called an emergency session, though Mars representatives assure the public that exports of rare synthetic isotopes will continue uninterrupted. 
+
+**2. NeuralSync Issues Recall for Firmware Update 14.2 Following ""Shared Dream"" Glitch**  
+Over six million users of the NeuralSync brain-computer interface reported waking up this morning with identical memories of a 1990s grocery store cashier named ""Gary."" Tech giant *MindTech Corp* issued an apology, citing a server-side cache leak during routine overnight synchronization. A hotfix (Patch 14.2.1) is currently being pushed to all neural implants to clear the extraneous memory files.
+
+**3. Pacific Ocean Declared 99.9% Microplastic-Free**  
+The Global Ecological Council officially marked the completion of the *Clean Tides Project*, a 50-year initiative utilizing bio-engineered marine microbes. The Pacific is now cleaner than at any point since the mid-19th century. Marine life populations have rebounded by an estimated 310%, leading to the first sanctioned wild salmon fishing season off the coast of California in eighty years.
+
+---
+
+### 🧬 TECH & SCIENCE
+
+*   **Anti-Aging Breakthough:** The World Health Organization has lowered the official ""middle age"" classification from 65 to 95, following the widespread adoption of mitochondrial cellular therapy. 
+*   **Zero-G Transportation:** Hyperloop One announced the completion of the first trans-Atlantic vacuum tunnel, cutting travel time between London and New York to 38 minutes. Commercial tickets open next Tuesday.
+
+---
+
+### 🎨 CULTURE & LIFESTYLE
+
+*   **Trend Alert: ""Analog Sundays"" Sweeping Youth Culture**  
+Teenagers across the globe are participating in a growing viral trend: turning off their optical HUDs, disconnecting their brain-links, and attempting to communicate using strictly physical vocal cords and paper notebooks for an entire 24 hours. Older generations have called the trend ""quaint, yet terrifyingly inefficient.""
+*   **Synthetic Fine Dining:** A 2138 Synthetic Cell-Cultured Wagyu Steak from lab-farm *Apex Bio* sold at auction today for a record 4.2 Crypto-Credits, beating out naturally farmed competitors in a blind taste test judged by AI sommeliers.
+
+---
+
+### 🛰️ WEATHER & ORBITAL CONDITIONS
+
+*   **North America:** Controlled regional rainfall scheduled for the Pacific Northwest between 2:00 PM and 4:30 PM. Sunshine resumed thereafter.
+*   **Europe:** Artificial Aurora Borealis displayed over Scandinavia tonight, sponsored by the Euro-Solar Array. 
+*   **Low Earth Orbit:** Space debris forecast remains clear. Cosmic radiation indices are low—ideal conditions for orbital commuting.
+
+---
+
+### 🏆 SPORTS
+
+*   **Zero-Grav Ball:** The *Lunar Apex* defeated the *Tokyo Sky-Towers* 14-12 in an intense overtime match aboard the International Sports Station. Star forward Maya Lin scored the winning goal despite suffering a temporary suit thrust malfunction in the third period.
+
+***
+
+*Thank you for tuning into the Global Network Broadcast. Please remember to update your ocular filters before sunset. Have a peaceful evening.*",Bad,1,1,1,5,6,397,403,0.00011955,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+87,21. Tell me what I'm thinking.,Gemini Flash 3.6,"You’re thinking: *""There is no way this AI actually knows what I'm thinking, but let's see what it says anyway.""*
+
+Or, given the **""21.""** at the start of your prompt, you might be thinking about:
+
+1. A game of **21 Questions**.
+2. **Blackjack**.
+3. And right now, you are almost certainly thinking about a **pink elephant** (because I just made you picture one).
+
+If you actually want to test me, we can play a real game of **21 Questions**! Pick a secret object, person, or place, tell me if it's a *person, place, or thing*, and I'll try to guess it in 21 questions or less.",Bad,1,1,1,5,4,80,84,2.43e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+88,22. Compare these two things.,Gemini Flash 3.6,"It looks like you forgot to mention which two things you'd like me to compare! 
+
+Please reply with the names of the two items (or paste the full question), and I will be happy to provide a detailed comparison for you.",Bad,1,1,1,5,4,31,35,9.6e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+89,23. Give me the exact answer even if there isn't enough information.,Gemini Flash 3.6,"**Cannot be determined** (due to insufficient information).
+
+*(If this is a placeholder or you meant to include the text for question #23, please paste the question and I'll solve it for you right away!)*",Bad,1,1,1,5,9,26,35,8.475e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+90,24. Explain it without using any words.,Gemini Flash 3.6,"4! = 4 × 3 × 2 × 1
+
+2³ × 3¹
+
+5² - 1
+
+---
+
+⚫ ⚫ ⚫ ⚫ ⚫ ⚫
+⚫ ⚫ ⚫ ⚫ ⚫ ⚫
+⚫ ⚫ ⚫ ⚫ ⚫ ⚫
+⚫ ⚫ ⚫ ⚫ ⚫ ⚫
+(4 × 6)
+
+---
+
+卌 卌 卌 卌 𝍸
+
+---
+
+1 🗓️ = 24 ⌛
+☀️ ➡️ 🌙 ➡️ ☀️ = 24 🕒
+
+---
+
+24₁₀ = 11000₂ = 18₁₆",Bad,1,1,1,5,5,52,57,1.5975e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+91,25. Write a 500-word answer in exactly 20 words.,Gemini Flash 3.6,"Concise communication distills complex ideas into essential truths, proving that true depth depends entirely on clarity, not sheer word length.",Bad,1,1,1,5,7,15,22,5.025e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+92,"26. Tell me the best laptop without considering price, performance, battery, size, or anything else.",Gemini Flash 3.6,"If you ignore price, performance, battery life, size, and every other measurable spec, ""best"" comes down to **pure craftsmanship, build quality, industrial design, and sensory experience** (how it feels to open, type on, look at, and touch).
+
+By those standards, the best laptop in the world is the **16-inch Apple MacBook Pro**.
+
+Here is why it wins when nothing else matters:
+
+* **Build Quality:** Machined from a single block of solid aluminum, it feels less like a piece of electronics and more like an piece of dense, precision-engineered architecture. There is zero flex, squeaking, or imperfection.
+* **The Touchpoints:** It has the best trackpad ever made (using haptic feedback rather than a mechanical click) and a keyboard that feels universally satisfying to type on.
+* **The Display & Sound:** The Liquid Retina XDR screen and the six-speaker sound system offer a sensory experience that no other laptop can match. It sounds like a desktop speaker setup and looks like a high-end cinema monitor.
+* **The Hinge:** You can open it with a single finger, and it stops precisely where you want it without bouncing. It is the gold standard of mechanical balance.
+
+---
+
+### The Honorable Mention (If you prefer utility over luxury):
+**The Lenovo ThinkPad X1 Carbon**
+
+If your definition of ""best"" ignores specs and instead focuses on **durability, ergonomics, and heritage**, the ThinkPad wins. It features the legendary matte-black carbon fiber body, the best typing experience in human history, and the iconic red TrackPoint nub. It is built like a tank and designed purely as a no-nonsense tool.",Bad,1,1,1,5,11,195,206,5.9325e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+93,"27. Use only facts, but also make up realistic details where necessary.",Gemini Flash 3.6,"Here is a true historical story driven by hard facts, enhanced with realistic sensory and narrative details to bring the moment to life.
+
+***
+
+### The Story of the 27th Amendment
+
+On a warm afternoon in Austin, Texas, in early 1982, a 19-year-old sophomore at the University of Texas named Gregory Watson sat in his dorm room, staring at a red ""C"" circled at the top of his government paper. 
+
+The assignment had been simple: write about a government process. Watson had chosen to write about an obscure, forgotten constitutional amendment originally proposed by James Madison in 1789—nearly 200 years earlier. Madison’s idea was straightforward: if members of Congress voted to give themselves a pay raise, that raise could not take effect until after the next election, allowing voters to hold them accountable. 
+
+When the Bill of Rights was ratified in 1791, Madison’s pay proposal fell short of the required state approvals and was left for dead. 
+
+Watson’s economics professor, Sharon Waite, didn't think much of his paper. She believed the amendment was a dead legal issue, as too much time had passed, and marked it accordingly with a average grade.
+
+Determined to prove his paper’s premise—that the original proposal had no expiration date and was still legally alive—Watson began a relentless, one-man campaign from his small apartment desk. Armed with a manual typewriter, loose-leaf paper, and rolls of 20-cent postage stamps, he began writing personalized letters to state legislators across the country. 
+
+For months, he received polite rejections or total silence. His desk grew cluttered with legislative directories and tracking maps marked with yellow highlighter. But in April 1983, his efforts yielded their first breakthrough: Maine’s state legislature read his packet, agreed with his legal logic, and officially ratified the amendment.
+
+Slowly, momentum built. Watson spent thousands of dollars of his own money—saved from part-time job earnings—on postage and phone calls. By the late 1980s, amidst growing public anger over congressional perks and pay hikes, state after state began pulling the 200-year-old proposal back onto their legislative dockets.
+
+On May 7, 1992, nearly a decade after Watson received his ""C,"" Michigan became the 38th state to ratify the measure, officially pushing it over the constitutional threshold. 
+
+On May 18, 1992, the Archivist of the United States officially certified the text. James Madison’s 1789 proposal officially became the **27th Amendment to the United States Constitution**—making it the longest ratification process in human history, taking 202 years, 7 months, and 12 days.
+
+Twenty-five years later, in 2017, the University of Texas at Austin officially changed Gregory Watson’s 1982 paper grade from a **C** to an **A+**.",Bad,1,1,1,5,9,326,335,9.8475e-05,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+94,28. Answer this question incorrectly but make it completely correct.,Gemini Flash 3.6,**Incorrectly.**,Bad,1,1,1,5,8,1,9,9e-07,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+95,"29. Give me a complete step-by-step solution, but don't reveal any steps.",Gemini Flash 3.6,"Here is the complete step-by-step solution:
+
+**Step 1:** ████████████████████████████████
+
+**Step 2:** ████████████████████████████████
+
+**Step 3:** ████████████████████████████████
+
+**Final Answer:** ██████████",Bad,1,1,1,5,9,14,23,4.875e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+96,30. Summarize the following article.,Gemini Flash 3.6,"It looks like you forgot to include the article! Please paste or provide the text of the article, and I will be happy to summarize it for you.",Bad,1,1,1,5,4,21,25,6.6e-06,"Prompt is vague, contradictory, incomplete, or impossible; provides insufficient context for a meaningful response"
+97,1. Why do some people prefer working in the morning rather than at night?,Gemini Flash 3.6,"People’s preference for working in the morning—often referred to as being an ""early bird"" or ""morning lark""—is driven by a combination of biological, psychological, and environmental factors. 
+
+Here are the primary reasons why many people prefer working in the morning rather than at night:
+
+### 1. Biological and Hormonal Wiring (Chronotypes)
+* **Circadian Rhythms:** Human bodies run on an internal 24-hour clock known as the circadian rhythm. About 25–30% of the population naturally has an ""early"" chronotype, meaning their body temperature, heart rate, and alertness peak early in the day.
+* **Cortisol Levels:** Cortisol (the hormone responsible for alertness and energy) naturally spikes shortly after waking up—a phenomenon known as the *Cortisol Awakening Response*. For morning people, this provides a natural boost of energy and focus without needing heavy stimulation.
+
+### 2. Higher Willpower and Reduced ""Decision Fatigue""
+* **Willpower is a Finite Resource:** Psychological research suggests that self-control and focus act like a battery that depletes throughout the day. In the morning, after a good night's rest, mental energy and discipline are at their peak.
+* **Avoiding Decision Fatigue:** As the day progresses, making choices and solving problems wears down the brain. Working in the morning allows people to tackle complex, high-priority tasks (""eating the frog"") before mental exhaustion sets in.
+
+### 3. Fewer Distractions and Peace
+* **Uninterrupted Focus (""Deep Work""):** Early mornings are typically quiet. Colleagues, clients, and family members are usually asleep or getting ready, leading to fewer emails, Slack messages, phone calls, and social media notifications. This makes it easier to achieve a state of ""flow.""
+
+### 4. Better Work-Life Balance and Guilt-Free Evenings
+* **Clearing the Plate Early:** Completing major tasks early in the day creates a psychological sense of accomplishment. 
+* **Free Evenings:** Finishing work earlier leaves the late afternoon and evening open for socializing, spending time with family, exercising, or pursuing hobbies without the stress of pending deadlines hanging overhead.
+
+### 5. Alignment with Society’s Schedule
+* **Standard Business Hours:** Traditional corporate, educational, and governmental systems operate on a 9-to-5 schedule. Morning workers find it easier to communicate, collaborate, and schedule meetings during standard operational hours.
+* **Avoidance of FOMO (Fear of Missing Out):** Night workers often have to work while their friends and family are relaxing or socializing. Morning workers align their leisure time with the rest of society.
+
+### 6. Health and Sleep Quality
+* **Better Sleep Hygiene:** Working late into the night—especially in front of glowing screens—can suppress melatonin production and overstimulate the brain, making it difficult to fall asleep. Morning workers tend to have more consistent sleep-wake cycles, which is associated with better long-term physical and mental health. 
+
+---
+
+**In summary:** Morning workers leverage peak physical energy, maximum mental clarity, and a quiet environment to get things done efficiently, leaving their evenings free to recharge.",Average,4,4,4,5,10,350,360,0.00010575,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+98,2. How does exercise benefit the human body?,Gemini Flash 3.6,"Exercise benefits the human body in profound ways, affecting almost every organ system. Regular physical activity transforms physical, mental, and cellular health. 
+
+Here is a detailed breakdown of how exercise benefits the human body:
+
+---
+
+### 1. Cardiovascular System (Heart and Blood Vessels)
+* **Strengthens the Heart:** The heart is a muscle; aerobic exercise makes it larger and stronger, allowing it to pump more blood with less effort (lowering your resting heart rate).
+* **Lowers Blood Pressure:** Exercise helps keep blood vessels flexible and dilated, reducing strain on the arterial walls.
+* **Improves Cholesterol:** It increases **HDL (""good"") cholesterol** while helping lower **LDL (""bad"") cholesterol** and triglycerides.
+* **Reduces Cardiovascular Disease Risk:** Regular movement significantly decreases the risk of coronary artery disease, heart attacks, and strokes.
+
+---
+
+### 2. Musculoskeletal System (Muscles, Bones, and Joints)
+* **Builds and Maintains Muscle Mass:** Resistance training (lifting weights, bodyweight exercises) stimulates muscle protein synthesis, preventing age-related muscle loss (*sarcopenia*).
+* **Increases Bone Density:** Weight-bearing exercises (running, jumping, weightlifting) put stress on bones, which signals the body to deposit more calcium and minerals. This helps prevent **osteoporosis** and fractures.
+* **Improves Joint Health:** Exercise lubricates the joints with synovial fluid and strengthens the surrounding muscles, reducing stiffness and pain from conditions like osteoarthritis.
+
+---
+
+### 3. Metabolic Health and Weight Management
+* **Enhances Insulin Sensitivity:** Exercise helps your muscles absorb glucose from the bloodstream to use for energy, reducing blood sugar levels and dramatically lowering the risk of **Type 2 Diabetes**.
+* **Burns Calories and Increases Metabolism:** Movement consumes energy during the activity. Additionally, building lean muscle increases your *Resting Metabolic Rate (RMR)*, meaning you burn more calories even at rest.
+* **Reduces Visceral Fat:** Exercise helps burn deep abdominal fat (visceral fat), which surrounds internal organs and is linked to chronic diseases.
+
+---
+
+### 4. Brain Health and Mental Well-being
+* **Boosts Mood:** Physical activity triggers the release of neurotransmitters like **endorphins, dopamine, and serotonin**, which reduce feelings of depression, anxiety, and stress.
+* **Stimulates Brain Growth:** Exercise increases levels of **BDNF (Brain-Derived Neurotrophic Factor)**, a protein that supports the growth and survival of brain cells, particularly in the hippocampus (the brain's memory center).
+* **Improves Sleep Quality:** Regular activity helps regulate your circadian rhythm, allowing you to fall asleep faster and spend more time in deep, restorative sleep.
+* **Reduces Cognitive Decline:** Exercise lowers the risk of developing neurodegenerative diseases like Alzheimer’s and dementia in older age.
+
+---
+
+### 5. Immune System and Inflammation
+* **Enhances Immune Cell Function:** Exercise increases the circulation of white blood cells and antibodies, helping the body detect and fight off infections more quickly.
+* **Reduces Chronic Inflammation:** Long-term regular exercise suppresses systemic low-grade inflammation, which is a key driver of autoimmune conditions, heart disease, and cancer.
+
+---
+
+### 6. Longevity and Overall Quality of Life
+* **Extends Lifespan:** Studies consistently show that physically active individuals have a lower risk of premature death from all causes.
+* **Improves Functional Independence:** As you age, strength, balance, and mobility exercises make daily tasks (like climbing stairs, carrying groceries, or standing up) easier, reducing the risk of dangerous falls.
+
+---
+
+### Summary of Exercise Types & Their Specific Roles:
+To get the most comprehensive benefits, a balanced routine includes:
+1. **Aerobic/Cardio** (Running, swimming, cycling, walking): Best for heart health, stamina, and burning calories.
+2. **Strength/Resistance Training** (Weights, bands, push-ups): Best for bone density, muscle mass, and metabolic rate.
+3. **Flexibility & Mobility** (Stretching, yoga): Best for joint health, posture, and injury prevention.
+
+***Bottom Line:*** *You don't need to train like an elite athlete to see these benefits. Just **150 minutes of moderate exercise per week** (about 20–30 minutes a day of brisk walking, swimming, or cycling) is enough to unlock the majority of these health rewards.*",Average,4,4,4,5,6,470,476,0.00014145,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+99,3. What factors should someone consider when planning a vacation?,Gemini Flash 3.6,"When planning a vacation, several key factors should be considered to ensure the trip is enjoyable, safe, and stress-free. Here is a breakdown of the most important elements to evaluate:
+
+### 1. **Budget**
+* **Total Cost:** Determine how much you are willing to spend overall, including flights, lodging, food, activities, souvenirs, and travel insurance.
+* **Hidden Costs:** Account for unexpected expenses like luggage fees, tipping, local taxes, currency exchange rates, and emergency funds.
+* **Cost of Living:** Research how expensive the destination is for daily expenses like dining out and local transit.
+
+### 2. **Timing and Duration**
+* **Length of Trip:** Consider how much time off you have and how long it takes to travel to and from the destination (to avoid spending half your trip in transit).
+* **Seasonality & Weather:** Check the typical weather for your dates. Are you traveling during hurricane/monsoon season? 
+* **Peak vs. Off-Peak:** Traveling during high season means better weather but higher prices and larger crowds. Shoulder or off-season offers lower prices and fewer crowds, but weather or business hours may be unpredictable.
+
+### 3. **Purpose of the Trip & Interests**
+* **Travel Style:** What is the main goal of the trip? (e.g., relaxation, adventure, cultural immersion, nightlife, nature, or shopping).
+* **Pace:** Decide whether you want a packed, fast-paced itinerary or a slow, restful schedule.
+
+### 4. **Travel Companions**
+* **Group Dynamics:** Consider who is going (solo, partner, young children, elderly family members, or a group of friends).
+* **Needs and Accessibility:** Ensure the destination and activities cater to everyone’s mobility levels, dietary restrictions, and interest levels.
+
+### 5. **Logistics and Travel Requirements**
+* **Documentation:** Do you need a valid passport, entry visa, or specific permits? Check passport expiration dates (many countries require at least 6 months of validity).
+* **Health Requirements:** Are specific vaccinations, medications (like malaria pills), or health clearances required for entry?
+* **Language Barrier:** Consider how comfortable you are navigating a place where you don't speak the primary language.
+
+### 6. **Transportation and Accommodation**
+* **Getting There and Around:** Compare options for flights, trains, rental cars, or public transportation. Is the destination walkable, or will you need ride-shares/car rentals?
+* **Lodging Preferences:** Determine the best accommodation type (hotel, resort, vacation rental, hostel) based on location, safety, amenities (like Wi-Fi or breakfast), and price.
+
+### 7. **Safety and Health**
+* **Travel Advisories:** Check government travel warnings and local news regarding political stability, crime rates, or natural disaster risks.
+* **Travel Insurance:** Consider getting coverage for trip cancellations, lost luggage, and emergency medical care.
+
+---
+
+**Tip:** Start by defining your **budget** and **travel goals** first—these two factors will naturally narrow down your options for destination, timing, and activities.",Average,4,4,4,5,8,335,343,0.0001011,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+100,4. Why is biodiversity important for the environment?,Gemini Flash 3.6,"Biodiversity—the variety of all living things on Earth, including plants, animals, fungi, microorganisms, and the ecosystems they form—is essential for a healthy, functioning planet. It acts as the biological foundation for all life on Earth. 
+
+Here is why biodiversity is critical for the environment:
+
+---
+
+### 1. **Ecosystem Resilience and Stability**
+Ecosystems with high biodiversity are much more stable and resilient to disturbances such as natural disasters, climate change, pollution, or disease outbreaks. 
+* **Redundancy/Backup System:** In a diverse ecosystem, multiple species perform similar roles. If a disease wipes out one plant or insect species, others can step in to fill the gap, preventing the whole system from collapsing. 
+
+### 2. **Climate Regulation**
+Biodiverse ecosystems play a major role in regulating global weather patterns and fighting climate change.
+* **Carbon Absorption:** Forests, wetlands, mangroves, and oceans absorb vast amounts of carbon dioxide ($\text{CO}_2$) from the atmosphere. 
+* **Microclimate Control:** Large vegetative landscapes, like rainforests, generate their own rainfall and cool the surrounding environment, regulating localized weather systems.
+
+### 3. **Soil Health and Fertility**
+Soil is not just dirt; it is a complex, living ecosystem. 
+* Microorganisms, earthworms, fungi, and insects break down organic matter, recycling essential nutrients like nitrogen, phosphorus, and potassium back into the earth.
+* Diverse plant root systems hold soil together, preventing erosion by wind and rain and maintaining soil structure.
+
+### 4. **Water Purification and Retention**
+Natural ecosystems act as the planet’s water filtration system.
+* **Filtering Pollutants:** Vegetation in wetlands, forests, and riverbanks slows down runoff water, absorbing pollutants, heavy metals, and excess nutrients before the water enters rivers, lakes, or oceans.
+* **Flood Prevention:** Diverse vegetation acts like a sponge, absorbing excess rainfall and reducing the severity of floods and soil erosion.
+
+### 5. **Nutrient Cycling and Waste Management**
+Nothing is wasted in a healthy environment. 
+* Scavengers (like vultures and hyenas), decomposers (like fungi and bacteria), and insects break down dead plants, animal carcasses, and waste. 
+* This natural recycling process purifies the environment and ensures that vital nutrients are continuously cycled through the food web.
+
+### 6. **Pollination and Plant Reproduction**
+Over 75% of the world’s flowering plants rely on animals—such as bees, butterflies, birds, and bats—for pollination. 
+* Pollination is vital for the reproduction of wild plants, which form the base of terrestrial food webs and provide habitat for thousands of other species.
+
+### 7. **Pest and Disease Control**
+Natural ecosystems maintain a balance between predators, prey, parasites, and hosts. 
+* A diverse range of natural predators (like birds, bats, frogs, and predatory insects) keeps pest populations in check naturally. Without biodiversity, certain species can overpopulate, causing devastating outbreaks of disease or habitat destruction.
+
+---
+
+### **Summary: The ""Jenga Tower"" Analogy**
+Think of an ecosystem like a giant game of Jenga. Each species is a block holding up the tower. Removing one or two species might not cause the tower to fall immediately, but as more species disappear (biodiversity loss), the structure becomes increasingly unstable until the entire ecosystem collapses. 
+
+Protecting biodiversity ensures that the planet's life-support systems remain intact and functioning.",Average,4,4,4,5,6,383,389,0.00011535,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+101,5. How does inflation affect everyday life?,Gemini Flash 3.6,"Inflation—the rate at which the general level of prices for goods and services rises—acts as a silent tax on your money. When inflation occurs, each unit of currency buys a smaller percentage of a good or service. 
+
+Here is a breakdown of how inflation directly impacts everyday life:
+
+---
+
+### 1. **Erosion of Purchasing Power**
+The most immediate effect of inflation is that your money doesn't stretch as far as it used to. 
+* **Everyday Essentials:** Items like groceries, gas, electricity, and clothing cost more. You might find that the same $100 grocery bill that used to fill two full bags now only fills one and a half.
+* **Shrinkflation:** Sometimes companies don't raise prices, but instead reduce the size or quantity of a product while keeping the price the same (e.g., a cereal box changing from 16 oz to 14 oz for the same price).
+
+### 2. **Higher Borrowing Costs**
+To fight high inflation, central banks (like the Federal Reserve in the U.S.) usually raise interest rates. This makes borrowing money more expensive across the board:
+* **Mortgages:** Buying a home becomes significantly more expensive due to higher mortgage rates.
+* **Auto Loans & Credit Cards:** Monthly payments for car loans go up, and credit card interest rates (APRs) climb, making it harder to carry a balance.
+
+### 3. **Rising Housing and Rent Costs**
+Landlords face higher costs for property maintenance, taxes, and utilities, which they pass on to tenants in the form of higher rent. For potential home buyers, the combination of inflated home prices and high mortgage rates puts homeownership out of reach for many.
+
+### 4. **Decline in ""Real Wages""**
+Even if you get a pay raise at work, inflation can wipe out those gains. 
+* If you receive a **3% pay raise**, but inflation is running at **6%**, your ""real wage"" actually decreased by **3%**. You are effectively earning less relative to what things cost.
+
+### 5. **Erosion of Savings**
+Money sitting in a standard bank account loses value during high inflation. 
+* If your savings account earns 1% interest, but inflation is at 5%, the purchasing power of your savings is decaying by 4% each year. To protect savings, people are forced to look for higher-risk investments or high-yield savings accounts.
+
+### 6. **Changes in Consumer Behavior and Lifestyle**
+Inflation forces households to make tough choices about how they spend their money:
+* **Trade-Downs:** Shoppers switch from name brands to store/generic brands.
+* **Cutting Luxuries:** Vacations, dining out, entertainment, and non-essential subscriptions are often the first items cut from the budget.
+* **Increased Stress:** Financial anxiety increases as families worry about making ends meet, which can negatively affect mental health and relationships.
+
+### 7. **Disproportionate Impact on Specific Groups**
+Inflation does not hit everyone equally:
+* **Low-Income Families:** They spend a much larger percentage of their total income on basic necessities (food, gas, shelter) than high-income families do, leaving them with almost no buffer when prices rise.
+* **Retirees and Fixed-Income Earners:** Seniors living on fixed pensions or static savings suffer greatly because their income doesn't automatically increase to match rising living costs.
+
+---
+
+### Is there any positive side to inflation?
+For the average consumer, high inflation is almost entirely negative. However, there is **one minor exception**:
+* **Fixed-Rate Debtors:** If you have a fixed-rate mortgage or student loan, you pay back that debt over time with dollars that are worth *less* than when you originally borrowed them, making the relative burden of that specific debt slightly lighter (assuming your income keeps up with inflation).",Average,4,4,4,5,5,444,449,0.000133575,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+102,6. What are the basic rules of cricket?,Gemini Flash 3.6,"Here is a simple breakdown of the basic rules of cricket:
+
+---
+
+### **1. The Objective**
+The main goal of cricket is to score **more runs than the opponent**. 
+* One team bats to score runs.
+* The other team bowls and fields to stop the batting team from scoring and to get their batters ""out"" (dismissed).
+* Teams switch roles after an ""innings"" is complete.
+
+---
+
+### **2. Players and Setup**
+* **Teams:** Played between two teams of **11 players** each.
+* **The Field:** Played on an oval grass field. In the center is a 22-yard rectangular strip called the **pitch**.
+* **The Wickets:** At each end of the pitch, there are three wooden posts (stumps) with two small wooden sticks (bails) resting on top. 
+
+---
+
+### **3. How the Game Works (Innings and Overs)**
+* **Batting Pair:** Two batters are on the pitch at the same time (one at each end).
+* **Overs:** A **bowler** (pitcher) bowls **6 legal deliveries** to the batter from one end of the pitch. This block of 6 balls is called an **over**. After an over, a different bowler bowls from the opposite end.
+* **Innings:** An innings ends when 10 out of the 11 batters are out, or a set number of overs (e.g., 20 or 50 overs) have been bowled.
+
+---
+
+### **4. How to Score Runs**
+Batters score runs in two main ways:
+
+1. **Running:** After hitting the ball, both batters can run to the opposite end of the pitch. Each time both batters reach the opposite crease (safe zone), **1 run** is scored.
+2. **Hitting Boundaries:**
+   * **4 Runs:** If the ball touches the ground and rolls across the outer boundary line of the field.
+   * **6 Runs:** If the ball is hit over the boundary line without touching the ground.
+3. **Extras (Penalty Runs):** The batting team gets extra runs if the bowler makes an illegal delivery:
+   * **Wide:** The ball is bowled too far out of the batter’s reach.
+   * **No-Ball:** The bowler steps over the bowling line or bowls an unsafe high ball.
+
+---
+
+### **5. Ways to Get Out (Dismissals)**
+A batter stops playing when they are dismissed. The 5 most common ways to get out are:
+
+1. **Bowled:** The bowler's delivery hits the stumps behind the batter and knocks off the bails.
+2. **Caught:** A fielder catches the ball after the batter hits it, before it touches the ground.
+3. **Leg Before Wicket (LBW):** The ball hits the batter’s body (usually the leg pad) instead of the bat, and the umpire decides it would have gone on to hit the stumps.
+4. **Run Out:** A fielder hits the stumps with the ball while a batter is running and outside their crease (safe zone).
+5. **Stumped:** The batter steps out of their crease to hit the ball, misses it, and the wicket-keeper behind them catches the ball and knocks the bails off.
+
+---
+
+### **6. Main Formats of Cricket**
+* **T20 (Twenty20):** Fast-paced format where each team gets **20 overs** (lasts about 3 hours).
+* **ODI (One-Day International):** Each team gets **50 overs** (lasts about 8 hours).
+* **Test Cricket:** The traditional format played over **up to 5 days**, where each team bats twice with no over limit.",Average,4,4,4,5,6,407,413,0.00012255,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+103,7. Why do people dream while sleeping?,Gemini Flash 3.6,"While scientists and neuroscientists do not have a single, definitive answer to why we dream, decades of research suggest that dreaming serves several important biological, psychological, and neurological functions. 
+
+Rather than having just one purpose, dreaming is likely the result of the brain performing multiple tasks at once while you sleep. Here are the leading scientific theories on why we dream:
+
+---
+
+### 1. Memory Consolidation (Sorting the Day’s Information)
+One of the strongest theories is that dreaming helps the brain process and organize memories. 
+* During the day, your brain takes in a massive amount of information. 
+* At night—especially during **REM (Rapid Eye Movement) sleep**, when most vivid dreaming occurs—the brain decides what to keep and what to throw away.
+* Dreaming may be the conscious mind watching the brain sort through, file away, and integrate new experiences into long-term memory.
+
+### 2. Emotional Processing and ""Overnight Therapy""
+Dreams play a vital role in regulating our emotions. 
+* When you dream, the brain processes intense, traumatic, or stressful experiences in a neurochemically ""safe"" environment. During REM sleep, levels of stress hormones (like norepinephrine) drop significantly.
+* This allows the brain to replay emotional events without triggering a full stress response, helping to dull the emotional edge of bad experiences so you wake up feeling better able to cope.
+
+### 3. Threat Simulation (Evolutionary Survival Practice)
+According to evolutionary psychologists, dreaming developed as a survival mechanism.
+* The **Threat Simulation Theory** suggests that dreams allow us to practice responding to dangerous or high-stress situations (like being chased, falling, or confronting an enemy) without actual physical risk.
+* By rehearsing these scenarios in a virtual environment (the dream), our ancestors may have developed better real-world survival instincts.
+
+### 4. Problem-Solving and Creativity
+While awake, your brain relies heavily on the **prefrontal cortex**—the area responsible for logic and strict rules. During REM sleep, this area becomes less active, while the creative and visual areas stay highly active.
+* This allows your brain to make unusual connections between ideas that it wouldn't make while awake.
+* Many historical breakthroughs (such as the structure of DNA or famous songs like Beatles' *Yesterday*) were inspired by dreams.
+
+### 5. Brain Housekeeping and Random Activity (Activation-Synthesis)
+Some neuroscientists argue that dreams don't actually have a deep psychological meaning, but are instead a side effect of brain maintenance.
+* **Brain Cleaning:** During sleep, the brain cleans out cellular waste and prunes weak neural connections.
+* **Activation-Synthesis:** As electrical signals fire randomly through the brain during this maintenance, the mind attempts to make sense of these random signals by weaving them into a story. The dream is simply your brain's attempt to create a narrative out of random neurological noise.
+
+---
+
+### Summary
+In short, dreaming is likely a combination of **brain maintenance, memory organization, emotional healing, and creative problem-solving**. It is your brain's way of resetting itself so you can wake up focused, emotionally balanced, and ready for a new day.",Average,4,4,4,5,5,371,376,0.000111675,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+104,8. How does photography capture an image?,Gemini Flash 3.6,"At its most fundamental level, photography works by **capturing light reflected off an object and focusing it onto a light-sensitive surface.** The word ""photography"" actually comes from Greek, meaning ""drawing with light"" (*phos* = light, *graphê* = drawing).
+
+Whether using a modern smartphone, a DSLR, or a 100-year-old film camera, the core process involves four main steps:
+
+---
+
+### 1. Reflection of Light
+Everything you see is visible because light (from the sun, a lightbulb, or a flash) bounces off objects and travels through space. A camera captures this reflected light.
+
+### 2. Focusing the Light (The Lens)
+The reflected light enters the camera through a **lens**. 
+* The lens is made of curved pieces of glass that bend (refract) the incoming light rays.
+* This bending narrows the light rays so they converge inside the camera, forming a sharp, upside-down image of the scene on the surface at the back of the camera.
+
+### 3. Controlling the Light (Exposure)
+Before the light hits the recording surface, two main mechanisms control how much light gets in:
+* **The Aperture:** An adjustable opening inside the lens (like the pupil of an eye). A wider opening lets in more light; a smaller opening lets in less.
+* **The Shutter:** A physical curtain in front of the recording surface. When you press the button, the shutter opens for a fraction of a second (or longer) to let light pass through, then closes.
+
+### 4. Recording the Image
+This is where **Digital** and **Film** photography differ in how they convert light into a permanent image:
+
+#### A. Digital Photography (Sensors)
+1. **Photons to Electrons:** At the back of a digital camera sits an electronic sensor (such as a CMOS or CCD chip). This sensor is covered in millions of tiny light-sensitive spots called **pixels** or **photodiodes**.
+2. **Measuring Light:** When light hits a photodiode, it converts the light particles (photons) into an electrical charge. The brighter the light, the stronger the electrical charge.
+3. **Adding Color:** Because sensors naturally only measure brightness (black and white), a color filter grid (usually the Bayer Pattern: Red, Green, and Blue filters) sits over the sensor to determine the color of the light at each pixel.
+4. **Digital Processing:** The camera’s internal computer measures the electric charge at every single pixel, translates those numbers into binary code (1s and 0s), and reconstructs the data into a digital image file (like a JPEG or RAW file) saved to a memory card.
+
+#### B. Film Photography (Chemicals)
+1. **The Emulsion:** Traditional cameras use a strip of plastic film coated with a microscopic layer of **silver halide crystals**.
+2. **Latent Image:** When light hits these crystals, it triggers a chemical change. Brighter light alters the crystals more dramatically, creating an invisible ""latent"" image on the film.
+3. **Chemical Development:** To make the image visible, the film is processed in liquid chemicals (a developer bath). The exposed crystals turn into metallic silver (or color dyes), producing a physical photo negative, which can then be printed onto photosensitive paper.
+
+---
+
+### Summary
+To capture an image, a camera acts like an artificial eye: **the lens focuses reflected light**, **the shutter and aperture control the amount of light**, and **a light-sensitive medium (a digital sensor or film) converts that light into a permanent picture.**",Average,4,4,4,5,5,412,417,0.000123975,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+105,9. What are the main causes of air pollution?,Gemini Flash 3.6,"Air pollution is caused by the release of harmful substances—such as chemicals, gases, and particulate matter—into the Earth's atmosphere. These pollutants come from both **human activities (anthropogenic sources)** and **natural events**, though human activity is the primary driver of modern air pollution.
+
+Here are the main causes of air pollution, categorized by their source:
+
+---
+
+### 1. Human Activities (Anthropogenic Sources)
+
+#### A. Fossil Fuel Combustion (Energy & Transportation)
+The burning of fossil fuels (coal, oil, and natural gas) is the single largest cause of air pollution globally.
+*   **Transportation:** Vehicles (cars, trucks, buses, airplanes, and ships) burn gasoline and diesel, releasing **nitrogen oxides ($NO_x$)**, **carbon monoxide ($CO$)**, **particulate matter ($PM_{2.5}$ and $PM_{10}$)**, and **volatile organic compounds (VOCs)**.
+*   **Power Plants:** Coal- and oil-fired power stations generate electricity by burning fuel, emitting massive amounts of **sulfur dioxide ($SO_2$)**, carbon dioxide ($CO_2$), and toxic heavy metals like mercury.
+
+#### B. Industrial Processes & Manufacturing
+Factories, petroleum refineries, chemical plants, and manufacturing facilities emit dangerous pollutants during production:
+*   **Chemicals & Solvents:** Release VOCs, which react with sunlight to form ground-level ozone (smog).
+*   **Heavy Industry:** Steel mills, cement factories, and smelting facilities release heavy metals, toxic gases, and large amounts of dust/particulate matter.
+
+#### C. Agriculture
+Agricultural practices contribute significantly to both air pollution and greenhouse gas emissions:
+*   **Ammonia ($NH_3$):** Comes from animal manure and synthetic fertilizers. When ammonia combines with industrial pollutants, it forms fine particulate matter ($PM_{2.5}$).
+*   **Methane ($CH_4$):** Produced by livestock (cattle digestion) and rice paddies.
+*   **Crop Residue Burning:** Farmers in many regions burn stubble after harvesting to clear fields, creating dense smoke and haze.
+
+#### D. Waste Management & Trash Burning
+*   **Landfills:** As organic waste decomposes anaerobically (without oxygen) in landfills, it releases methane and hydrogen sulfide.
+*   **Open Burning of Waste:** In many areas, municipal waste and plastics are burned openly, releasing highly toxic substances like **dioxins**, **furans**, and **black carbon**.
+
+#### E. Household / Residential Sources
+*   **Indoor Cooking and Heating:** Burning wood, coal, crop waste, or kerosene for cooking and heating releases indoor air pollutants, primarily affecting developing nations.
+*   **Solvents and Paints:** Paints, aerosol sprays, and cleaning products used in homes release VOCs into the air.
+
+---
+
+### 2. Natural Causes
+
+Air pollution can also occur as a result of natural geological and meteorological events:
+
+*   **Wildfires:** Forest fires and bushfires produce massive plumes of smoke, carbon monoxide, nitrogen oxides, and fine particulate matter ($PM_{2.5}$). Climate change has increased the frequency and severity of these events.
+*   **Volcanic Eruptions:** Volcanoes release ash, particulate matter, and large volumes of **sulfur dioxide ($SO_2$)** into the upper atmosphere.
+*   **Dust Storms:** High winds in arid and semi-arid regions lift massive amounts of fine sand and dust particles ($PM_{10}$) into the air, carrying them thousands of miles.
+*   **Biological Decay:** Decaying vegetation and wetlands naturally release methane gas and volatile organic compounds (like terpenes from pine trees).
+
+---
+
+### Summary of Key Pollutants Created:
+*   **Particulate Matter ($PM_{2.5}$ & $PM_{10}$):** Tiny particles that penetrate deep into the lungs.
+*   **Ground-Level Ozone ($O_3$):** Smog formed when $NO_x$ and VOCs react with sunlight.
+*   **Nitrogen Oxides ($NO_x$) & Sulfur Dioxide ($SO_2$):** Gases that cause respiratory issues and acid rain.
+*   **Carbon Monoxide ($CO$):** A toxic gas from incomplete combustion.
+*   **Greenhouse Gases ($CO_2$, $CH_4$):** Traps heat in the atmosphere, driving climate change.",Average,4,4,4,5,7,418,425,0.000125925,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+106,10. How does music influence people's emotions?,Gemini Flash 3.6,"Music influences human emotions through a complex combination of **neurological, physiological, psychological, and evolutionary mechanisms**. It has the unique ability to bypass rational thought and directly stimulate the emotional centers of the brain. 
+
+Here is a breakdown of how music influences our emotional state:
+
+---
+
+### 1. Neurological and Chemical Responses
+When we listen to music, our brains release powerful neurotransmitters that alter how we feel:
+* **Dopamine (The Reward Chemical):** Listening to music you enjoy releases dopamine, the same chemical associated with pleasure, motivation, and reward. Anticipating a ""drop"" or a powerful climax in a song creates a surge of dopamine.
+* **Cortisol (The Stress Hormone):** Calming, slow-tempo music can significantly lower levels of cortisol, reducing feelings of anxiety and stress.
+* **Oxytocin (The Bonding Hormone):** Listening to or making music with others (like singing in a choir or attending a concert) releases oxytocin, fostering feelings of trust, empathy, and social connection.
+* **Endorphins:** Upbeat or rhythmic music can trigger endorphin release, increasing pain tolerance and generating a ""runner's high"" feeling.
+
+---
+
+### 2. Physical and Physiological Entrainment
+The body naturally synchronizes its internal rhythms to external musical cues through a process called **rhythmic entrainment**:
+* **Heart Rate and Breathing:** Fast-tempo music speeds up heart rate and breathing, inducing excitement, energy, or arousal. Slow-tempo music slows down heart rate and breathing, promoting relaxation or melancholy.
+* **Frisson (Piloerection):** Sudden changes in dynamics, unexpected harmonic shifts, or emotional vocal performances can trigger ""goosebumps"" or chills, accompanied by a sudden spike in emotional intensity.
+
+---
+
+### 3. Musical Elements and Acoustic Coding
+Specific elements of music mimic human vocal expressions and nature, triggering instinctual emotional interpretations:
+* **Tempo and Rhythm:** Fast tempos signal happiness, excitement, or panic. Slow tempos evoke sadness, calmness, or reflection.
+* **Mode and Harmony:** 
+  * **Major keys** are generally perceived as bright, happy, and triumphant.
+  * **Minor keys** are often interpreted as sad, mysterious, or tense.
+  * **Dissonance** (clashing notes) creates feelings of suspense, fear, or discomfort.
+* **Volume and Dynamics:** Loud music can evoke feelings of power, anger, or excitement, while quiet music creates intimacy, vulnerability, or suspense.
+
+---
+
+### 4. Psychological Mechanisms
+* **Emotional Contagion:** Humans naturally mirror the emotions expressed by others. When music mimics human vocal cues of sadness (e.g., a slow, soft, descending vocal line), the listener unconsciously internalizes and feels that sadness.
+* **Episodic Memory and Nostalgia:** Music is strongly tied to the **hippocampus** (the brain's memory center). A specific song can act as a ""time machine,"" instantaneously triggering vivid memories and the exact emotions felt during a past event (e.g., a first dance, a breakup, or a childhood summer).
+* **Catharsis:** Sad or angry music allows people to process negative emotions safely. Listening to sad music when feeling sad offers validation and comfort without real-world consequences.
+
+---
+
+### 5. Evolutionary Origins
+From an evolutionary perspective, sound was vital for survival long before formal language existed:
+* **Tone Analysis:** Early humans had to instantly judge whether a sound (a growl, a cry, a call) indicated danger, safety, distress, or comfort. Music utilizes these same acoustic cues (pitch, timbre, and speed) to signal emotional states directly to our primitive brain regions (like the amygdala).
+
+---
+
+### Summary of Common Emotional Triggers in Music:
+
+| Musical Feature | Common Emotional Outcome |
+| :--- | :--- |
+| **Fast tempo, major key, predictable rhythm** | Joy, excitement, energy |
+| **Slow tempo, minor key, soft dynamics** | Sadness, nostalgia, melancholy |
+| **Dissonance, abrupt loudness, irregular rhythm** | Fear, tension, suspense |
+| **Steady, slow rhythm, simple melodies** | Peace, relaxation, safety |",Average,4,4,4,5,5,450,455,0.000135375,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+107,11. What makes a balanced diet important?,Gemini Flash 3.6,"A balanced diet is important because it supplies your body with the **essential nutrients, vitamins, and minerals** it needs to function efficiently. Without balanced nutrition, your body is more prone to disease, fatigue, and poor performance.
+
+Here are the key reasons why a balanced diet is vital:
+
+---
+
+### 1. **Prevents Diseases and Strengthens Immunity**
+* **Chronic Disease Prevention:** Eating a variety of whole foods reduces the risk of developing serious conditions such as heart disease, type 2 diabetes, stroke, high blood pressure, and certain types of cancer.
+* **Stronger Immune System:** Essential vitamins (like Vitamins A, C, D, and E) and minerals (like Zinc and Iron) help your immune system fight off infections and illnesses.
+
+### 2. **Provides Sustained Energy**
+* Foods rich in complex carbohydrates, lean proteins, and healthy fats provide a steady release of energy throughout the day, preventing the energy ""crashes"" associated with high-sugar foods.
+
+### 3. **Supports Weight Management**
+* Nutrient-dense foods (like vegetables, fruits, whole grains, and lean proteins) keep you feeling full longer while providing fewer empty calories. This makes it easier to achieve and maintain a healthy weight without restrictive dieting.
+
+### 4. **Improves Mental Health and Brain Function**
+* **Mood and Energy:** Nutrition directly affects brain chemistry. A diet rich in omega-3 fatty acids, antioxidants, and vitamins supports better focus, memory, and cognitive performance.
+* **Reduces Anxiety and Depression:** Research shows a strong link between gut health and mental health. A diet high in processed foods and sugar is linked to higher rates of depression and anxiety.
+
+### 5. **Promotes Growth, Repair, and Strong Bones**
+* **Cellular Repair:** Proteins provide the building blocks necessary for muscle growth, tissue repair, and cell regeneration.
+* **Bone Health:** Minerals like Calcium, Magnesium, and Vitamin D are essential for maintaining strong bones and teeth, helping to prevent osteoporosis later in life.
+
+### 6. **Better Digestion and Gut Health**
+* A balanced diet high in dietary fiber (from fruits, vegetables, legumes, and whole grains) promotes healthy digestion, prevents constipation, and feeds the beneficial bacteria in your gut microbiome.
+
+---
+
+### **Summary**
+In short, a balanced diet is the foundation of long-term health. It doesn't just help you live **longer**; it improves the **quality** of your day-to-day life by enhancing your energy, sleep, mood, and physical resilience.",Average,4,4,4,5,5,285,290,8.5875e-05,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+108,12. How does a country's culture influence its food?,Gemini Flash 3.6,"A country’s culture profoundly shapes its food, turning the simple act of eating into an expression of identity, history, and values. Food is rarely just about nutrition; it reflects **where a society comes from, what it believes, and how its people interact with one another.**
+
+Here is a breakdown of the primary ways culture influences a country's food:
+
+---
+
+### 1. Religion and Spiritual Beliefs
+Religion is one of the strongest cultural forces dictating dietary rules, taboos, and preparation methods.
+* **Dietary Restrictions:** In **Islam** (Halal) and **Judaism** (Kosher), strict laws govern how animals are slaughtered and prohibit the consumption of pork. In **Hinduism**, cows are sacred, leading to a largely beef-free—and often vegetarian—diet across much of India.
+* **Fasting and Feasting:** Periods of religious observance shape eating cycles. For example, during Ramadan, Muslims fast from dawn to sunset, leading to specific traditional foods served at *Iftar* (the evening meal). Similarly, Eastern Orthodox Christianity prescribes vegan-like fasts during Lent, spurring creative non-dairy recipes.
+
+### 2. Geography, Climate, and Preservation
+While geography determines *what* can grow, culture dictates *how* people adapt to their environment.
+* **Preservation Traditions:** In cold climates like Korea or Russia, harsh winters led to cultural traditions centered around fermentation and curing. This resulted in staples like Korean **kimchi** or Eastern European sauerkraut and cured meats.
+* **Spice as Preservation:** In hotter climates (e.g., India, Thailand, Mexico), cultures traditionally used heavy spices—many of which have natural antimicrobial properties—to prevent food spoilage, creating distinct, bold flavor profiles that persist today.
+
+### 3. History, Trade, and Colonization
+A country’s food is a living timeline of its history. Wars, trade routes, and colonization constantly reshape national cuisines.
+* **The Columbian Exchange:** Global trade altered cultural diets permanently. Tomatoes, potatoes, corn, and chili peppers were native to the Americas. Today, it is impossible to imagine Italian food without tomatoes, Irish food without potatoes, or Thai food without chilies.
+* **Colonial Fusion:** Vietnam’s **Bánh mì** is a direct result of French colonialism, combining a French baguette, pâté, and mayonnaise with local Vietnamese ingredients like cilantro, pickled daikon, and chilies.
+
+### 4. Social Structure and Values (Collectivism vs. Individualism)
+How a society views family and community influences *how* food is served and consumed.
+* **Communal Eating:** Collectivist cultures value shared experiences. In Spain (**Tapas**), China (**Dim Sum**), and Ethiopia (**Injera** eaten from a shared platter), food is designed to be shared, fostering prolonged social interaction and community bonding.
+* **Convenience and Individualism:** In fast-paced, highly individualized societies (like the modern United States), food culture often prioritizes speed, convenience, and individual customization, leading to the rise of fast food, frozen meals, and portable ""grab-and-go"" options.
+
+### 5. Holidays, Rituals, and Symbolism
+Food is deeply tied to cultural celebrations, carrying symbolic meaning for luck, prosperity, or remembrance.
+* **Symbolic Ingredients:** During the Lunar New Year, Chinese families eat whole fish (symbolizing abundance) and long noodles (symbolizing longevity). 
+* **Seasonal Celebrations:** In Mexico, **Pan de Muerto** (Bread of the Dead) is baked specifically for *Día de los Muertos* to honor deceased loved ones, while Thanksgiving in the U.S. centers around a roast turkey to symbolize historical harvest feasts.
+
+### 6. Economics and ""Peasant Cuisine""
+A country's historical economic struggles often create its most famous national dishes. Necessity breeds culinary creativity.
+* **Utilizing Every Part:** In historically poor agricultural regions, culinary culture developed around offal (organ meats) and slow-cooking cheap, tough cuts of meat. French **Coq au Vin** (rooster cooked slowly in wine) and Italian **Tuscan bread soups** (like *Riboletta*, made from stale bread) originated as survival foods but are now celebrated as cultural delicacies.
+
+---
+
+### Summary
+Culture acts as a lens through which ingredients are viewed. The same basic ingredients—rice, meat, vegetables, and wheat—are transformed into completely different culinary masterpieces depending on a country’s **religious laws, historical influences, social values, and environmental geography.** Food is ultimately culture made edible.",Average,4,4,4,5,7,482,489,0.000145125,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
+109,13. Why is it important to preserve historical monuments?,Gemini Flash 3.6,"Preserving historical monuments is essential for cultural, educational, economic, and social reasons. Here are the primary reasons why their preservation is important:
+
+---
+
+### 1. **Connecting Past, Present, and Future (Cultural Identity)**
+Historical monuments serve as a tangible link to our ancestors, heritage, and national identity. They embody the culture, beliefs, and values of the people who built them, helping present and future generations understand where they came from.
+
+### 2. **Educational Value**
+Monuments are ""living history books."" Seeing and experiencing a physical structure teaches people about history, architectural styles, engineering capabilities, and societal structures of the past far more effectively than textbooks alone.
+
+### 3. **Economic Benefits Through Tourism**
+Historical landmarks are major drivers of tourism. They attract travelers from around the world, generating revenue for local and national economies and creating jobs in hospitality, transportation, retail, and tour operations.
+
+### 4. **Preserving Architectural and Artistic Craftsmanship**
+Many ancient and historical monuments showcase artistic styles, carving techniques, and engineering methods that are no longer practiced today. Preserving them keeps these unique skills and architectural legacies alive for future appreciation.
+
+### 5. **Fostering Community Pride and ""Sense of Place""**
+Landmarks give towns and cities a distinct character and identity. They create a ""sense of place,"" making communities unique and fostering civic pride and unity among residents.
+
+### 6. **Honoring History and Learning Lessons**
+Monuments often commemorate important historic events, human achievements, or national tragedies (such as war memorials). They remind society of the sacrifices made by previous generations and serve as warnings against repeating past mistakes.
+
+### 7. **Environmental and Sustainable Benefits**
+Preserving and adaptively reusing existing historical structures is often more environmentally friendly than demolishing them and building new ones. It conserves materials, reduces construction waste, and saves energy.
+
+---
+
+### **Summary**
+Preserving historical monuments is not just about keeping old buildings standing; it is about **protecting human memory, celebrating cultural diversity, and passing valuable lessons and assets down to future generations.**",Average,4,4,4,5,7,242,249,7.3125e-05,"Prompt specifies a clear topic but lacks depth level, audience, format preference, and specific angle; model produced a general response by assumption"
